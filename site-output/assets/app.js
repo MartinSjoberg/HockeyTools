@@ -141,6 +141,7 @@
       "Build a better setup": ["Bygg en bättre utrustning", "Améliorez votre équipement", "Baue eine bessere Ausrüstung"],
       "Made for every bench": ["För alla spelare", "Pour tous les bancs", "Für jede Mannschaft"],
       "Useful advice, not gear jargon.": ["Användbara råd, utan utrustningsjargong.", "Des conseils utiles, sans jargon.", "Nützliche Ratschläge statt Ausrüstungsjargon."],
+      "Every result is a starting point. Comfort, confidence and ice time matter more than a perfect number. Test small changes and ask a qualified skate sharpener or coach when in doubt.": ["Alla resultat är en utgångspunkt. Komfort, trygghet och tid på isen är viktigare än ett perfekt tal. Testa små förändringar och fråga en kvalificerad skridskoslipare eller tränare om du är osäker.", "Chaque résultat est un point de départ. Le confort, la confiance et le temps passé sur la glace comptent plus qu’un chiffre parfait. Testez de petits changements et demandez conseil à un affûteur de patins qualifié ou à un entraîneur en cas de doute.", "Jedes Ergebnis ist ein Ausgangspunkt. Komfort, Selbstvertrauen und Zeit auf dem Eis sind wichtiger als eine perfekte Zahl. Teste kleine Änderungen und frage im Zweifel einen qualifizierten Schlittschuhschleifer oder Trainer."],
       "Youth players": ["Ungdomsspelare", "Joueurs jeunes", "Jugendspieler"], "Adult recreational players": ["Vuxna motionsspelare", "Adultes loisirs", "Erwachsene Freizeitspieler"],
       "Competitive players": ["Tävlingsspelare", "Joueurs compétitifs", "Wettkampfspieler"], "Parents": ["Föräldrar", "Parents", "Eltern"], "Hockey coaches": ["Hockeytränare", "Entraîneurs de hockey", "Hockeytrainer"],
       "Find a practical starting flex based on weight, position and playing style.": ["Hitta en praktisk startflex utifrån vikt, position och spelstil.", "Trouvez un flex de départ pratique selon le poids, la position et le style de jeu.", "Finde einen sinnvollen Start-Flex anhand von Gewicht, Position und Spielstil."],
@@ -245,7 +246,7 @@
         "Recommended stick length": ["Rekommenderad klubblängd", "Longueur de crosse recommandée", "Empfohlene Schlägerlänge"],
         "Acceptable range:": ["Godkänt intervall:", "Fourchette acceptable :", "Akzeptabler Bereich:"],
         "Enter your details to see your personalized explanation.": ["Fyll i dina uppgifter för att se din personliga förklaring.", "Saisissez vos informations pour voir votre explication personnalisée.", "Gib deine Daten ein, um deine persönliche Erklärung zu sehen."],
-        "With skates on, many players prefer the top near the chin. Always check blade contact and stance before cutting.": ["Med skridskor på föredrar många att skaftet når nära hakan. Kontrollera alltid bladets kontakt med isen och din hållning innan du kapar klubban.", "Avec les patins, beaucoup de joueurs préfèrent que le manche arrive près du menton. Vérifiez toujours le contact de la lame et votre posture avant de couper.", "Mit Schlittschuhen reicht der Schläger bei vielen Spielern bis nahe ans Kinn. Prüfe vor dem Kürzen immer Kufen-Kontakt und Haltung."],
+        "With skates on, many players prefer the top near the chin. Always check blade contact and stance before cutting.": ["Med skridskor på föredrar många att skaftet når nära hakan. Kontrollera alltid att klubbans blad har kontakt med isen och att du står naturligt innan du kapar.", "Avec les patins, beaucoup de joueurs préfèrent que le manche arrive près du menton. Vérifiez toujours le contact de la palette de la crosse avec la glace et votre posture avant de couper.", "Mit Schlittschuhen reicht der Schläger bei vielen Spielern bis nahe ans Kinn. Prüfe vor dem Kürzen immer, ob das Schlägerblatt auf dem Eis aufliegt und die Haltung stimmt."],
         "Quick reference": ["Snabbreferens", "Référence rapide", "Schnellübersicht"],
         "Hockey stick sizing chart": ["Storlekstabell för hockeyklubbor", "Tableau des tailles de crosses de hockey", "Hockeyschläger-Größentabelle"],
         "This youth hockey stick size chart and adult reference provide broad starting points. Always prioritize the player’s actual height and comfortable stance.": ["Den här storlekstabellen för ungdomsklubbor och vuxenreferensen ger breda utgångspunkter. Utgå alltid från spelarens faktiska längd och bekväma hållning.", "Ce tableau pour jeunes et cette référence adulte donnent des points de départ généraux. Privilégiez toujours la taille réelle et la posture confortable du joueur.", "Diese Tabelle für Jugendspieler und die Erwachsenenreferenz bieten allgemeine Ausgangspunkte. Entscheidend sind immer die tatsächliche Größe und eine bequeme Haltung."],
@@ -259,7 +260,7 @@
         "Add about 1–2 in": ["Lägg till cirka 2–5 cm", "Ajouter environ 2–5 cm", "Etwa 2–5 cm hinzufügen"],
         "Buying guide": ["Köpguide", "Guide d’achat", "Kaufberatung"],
         "How to choose the correct hockey stick length": ["Så väljer du rätt längd på hockeyklubban", "Comment choisir la bonne longueur de crosse", "So findest du die richtige Hockeyschlägerlänge"],
-        "Stand in your skates with the blade on the ice and your hands in a natural hockey stance. For many forwards, the shaft reaches around the chin. A player who wants more reach, poke-check range or leverage may prefer closer to the nose.": ["Stå i skridskorna med bladet på isen och händerna i en naturlig hockeyhållning. För många forwards når skaftet ungefär till hakan. Den som vill ha mer räckvidd, räckvidd vid petningar eller hävstång kan föredra närmare näsan.", "Tenez-vous sur vos patins, lame sur la glace et mains en posture naturelle. Pour beaucoup d’attaquants, le manche arrive près du menton. Les joueurs qui veulent plus de portée ou de levier peuvent préférer le nez.", "Stelle dich mit Kufen auf dem Eis und den Händen in natürlicher Hockeyhaltung hin. Für viele Stürmer reicht der Schaft bis etwa zum Kinn. Wer mehr Reichweite oder Hebelwirkung möchte, kann eine Länge bis zur Nase bevorzugen."],
+        "Stand in your skates with the blade on the ice and your hands in a natural hockey stance. For many forwards, the shaft reaches around the chin. A player who wants more reach, poke-check range or leverage may prefer closer to the nose.": ["Stå i skridskorna med klubbans blad på isen och händerna i en naturlig hockeyhållning. För många forwards når skaftet ungefär till hakan. Den som vill ha mer räckvidd, räckvidd vid petningar eller hävstång kan föredra närmare näsan.", "Tenez-vous sur vos patins, palette de la crosse sur la glace et mains en posture naturelle. Pour beaucoup d’attaquants, le manche arrive près du menton. Les joueurs qui veulent plus de portée ou de levier peuvent préférer le nez.", "Stelle dich mit dem Schlägerblatt auf dem Eis und den Händen in natürlicher Hockeyhaltung hin. Für viele Stürmer reicht der Schaft bis etwa zum Kinn. Wer mehr Reichweite oder Hebelwirkung möchte, kann eine Länge bis zur Nase bevorzugen."],
         "Hockey stick length buying tips": ["Tips när du köper hockeyklubba", "Conseils pour acheter une crosse", "Tipps zum Kauf eines Hockeyschlägers"],
         "Buy for today’s stance:": ["Köp för dagens hållning:", "Achetez pour la posture actuelle :", "Kaufe für die heutige Haltung:"],
         "do not choose an excessively long stick just to grow into it.": ["välj inte en överdrivet lång klubba bara för att växa i den.", "ne choisissez pas une crosse excessivement longue pour la croissance.", "wähle keinen übermäßig langen Schläger nur zum Hineinwachsen."],
@@ -403,7 +404,7 @@
       "Can feel slower and heavier in longer glide": ["Kan kännas långsammare och tyngre vid längre glid", "Peut sembler plus lent et plus lourd lors d’une longue glisse", "Kann bei längerem Gleiten langsamer und schwerer wirken"],
       "Balanced": ["Balanserad", "Équilibré", "Ausgewogen"],
       "5/8 inch profile": ["5/8 tum profil", "Profil 5/8 po", "Profil 5/8 Zoll"],
-      "Often the best all-round starting point for recreational and competitive players. It keeps the blade stable without being too grabby.": ["Ofta den bästa allroundstarten för motions- och tävlingsspelare. Den håller bladet stabilt utan att kännas för taggigt.", "Souvent le meilleur point de départ pour les joueurs loisirs et compétitifs. Il garde la lame stable sans être trop mordant.", "Oft der beste Allround-Ausgangspunkt für Freizeit- und Leistungsspieler. Er hält die Klinge stabil, ohne zu grob zu wirken."],
+      "Often the best all-round starting point for recreational and competitive players. It keeps the blade stable without being too grabby.": ["Ofta den bästa allroundstarten för motions- och tävlingsspelare. Den håller skenan stabil utan att kännas för taggig.", "Souvent le meilleur point de départ pour les joueurs loisirs et compétitifs. Il garde la lame stable sans être trop mordant.", "Oft der beste Allround-Ausgangspunkt für Freizeit- und Leistungsspieler. Er sorgt für eine stabile Kufe, ohne zu bissig zu sein."],
       "Good for everyday skating and mixed ice": ["Bra för vardagsåkning och blandad is", "Idéal pour le patinage quotidien et la glace mixte", "Gut für den Alltag und gemischtes Eis"],
       "Offers a smooth blend of grip and glide": ["Ger en jämn blandning av grepp och glid", "Offre un mélange fluide d’accroche et de glisse", "Bietet eine sanfte Mischung aus Grip und Gleiten"],
       "One of the most common pro shop recommendations": ["Ett av de vanligaste rekommendationerna i proffshoppar", "Une des recommandations les plus courantes en pro shop", "Eine der häufigsten Empfehlungen in Profi-Shops"],
@@ -430,13 +431,13 @@
       "Faster skater → often shallower": ["Snabbare spelare → ofta grundare", "Patineur plus rapide → souvent plus léger", "Schnellerer Skater → oft flacher"],
       "The pro shop way": ["Proffshopens sätt", "La méthode du pro shop", "Der Profi-Shop-Weg"],
       "Make the profile work with the player.": ["Se till att profilen passar spelaren.", "Faites en sorte que le profil convienne au patineur.", "Passe das Profil an den Spieler an."],
-      "Pro shops rarely choose a profile by brand or marketing alone. They look at blade condition, ice type, player weight and whether the skater wants more grip for stops and turns or more glide for speed and clean edges.": ["Proffshoppar väljer sällan profil enbart efter märke eller marknadsföring. De tittar på bladets skick, istyp, spelarens vikt och om skridskoåkaren vill ha mer grepp i stopp och svängar eller mer glid för fart och rena kanter.", "Les pro shops choisissent rarement un profil uniquement selon la marque ou le marketing. Ils regardent l’état de la lame, le type de glace, le poids du patineur et s’il veut plus d’accroche pour les arrêts et virages ou plus de glisse pour la vitesse et les arêtes nettes.", "Profi-Shops wählen ein Profil selten nur nach Marke oder Marketing. Sie prüfen Zustand der Klinge, Eistyp, Gewicht des Skaters und ob mehr Grip für Stops und Kurven oder mehr Gleiten für Tempo und saubere Kanten gewünscht wird."],
+      "Pro shops rarely choose a profile by brand or marketing alone. They look at blade condition, ice type, player weight and whether the skater wants more grip for stops and turns or more glide for speed and clean edges.": ["Proffshoppar väljer sällan profil enbart efter märke eller marknadsföring. De tittar på skenans skick, istyp, spelarens vikt och om skridskoåkaren vill ha mer grepp i stopp och svängar eller mer glid för fart och rena kanter.", "Les pro shops choisissent rarement un profil uniquement selon la marque ou le marketing. Ils regardent l’état de la lame, le type de glace, le poids du patineur et s’il veut plus d’accroche pour les arrêts et virages ou plus de glisse pour la vitesse et les arêtes nettes.", "Profi-Shops wählen ein Profil selten nur nach Marke oder Marketing. Sie prüfen den Zustand der Kufe, den Eistyp, das Gewicht des Skaters und ob mehr Grip für Stops und Kurven oder mehr Gleiten für Tempo und saubere Kanten gewünscht wird."],
       "Ice conditions:": ["Isförhållanden:", "Conditions de glace :", "Eisbedingungen:"],
       "hard and fast ice usually favors a deeper profile; softer ice often rewards a shallower one.": ["hård och snabb is gynnar oftast en djupare profil; mjuk is gynnar ofta en grundare profil.", "la glace dure et rapide favorise généralement un profil plus profond ; une glace plus douce récompense souvent un profil plus peu profond.", "hartes und schnelles Eis begünstigt meist ein tieferes Profil; weicheres Eis belohnt oft ein flacheres."],
       "Skating style:": ["Skridskoåkning:", "Style de patinage :", "Skating-Stil:"],
       "quick, agile players often like a little more bite; smooth and fast skaters may prefer a shallower, faster profile.": ["snabba och rörliga spelare gillar ofta lite mer grepp; jämna och snabba spelare föredrar ofta en grundare och snabbare profil.", "les joueurs rapides et agiles apprécient souvent un peu plus d’accroche ; les patineurs fluides et rapides peuvent préférer un profil plus léger et plus rapide.", "schnelle und agile Spieler mögen oft etwas mehr Biss; smooth und schnelle Skater bevorzugen oft ein flacheres, schnelleres Profil."],
-      "Blade condition:": ["Bladets skick:", "État de la lame :", "Zustand der Klinge:"],
-      "a worn or uneven blade should be profiled and checked before changing the hollow dramatically.": ["ett slitna eller ojämnt blad bör profileras och kontrolleras innan du ändrar profilen mycket.", "une lame usée ou irrégulière doit être profilée et vérifiée avant de modifier le profil de manière importante.", "eine abgenutzte oder unebene Klinge sollte vor einer größeren Änderung profilieren und geprüft werden."],
+      "Blade condition:": ["Skenans skick:", "État de la lame :", "Zustand der Kufe:"],
+      "a worn or uneven blade should be profiled and checked before changing the hollow dramatically.": ["en sliten eller ojämn skena bör profileras och kontrolleras innan du ändrar skålradien mycket.", "une lame usée ou irrégulière doit être profilée et vérifiée avant de modifier le profil de manière importante.", "Eine abgenutzte oder unebene Kufe sollte vor einer größeren Änderung profiliert und geprüft werden."],
       "Next step": ["Nästa steg", "Étape suivante", "Nächster Schritt"],
       "Use the correct profile": ["Använd rätt profil", "Utilisez le bon profil", "Nutze das richtige Profil"],
       "Start with a standard profile, then test one step deeper or shallower for feel. Small changes often matter more than chasing the “perfect” number.": ["Börja med en standardprofil och testa sedan ett steg djupare eller grundare för känsla. Små ändringar betyder ofta mer än att jaga ett “perfekt” tal.", "Commencez par un profil standard, puis testez un cran plus profond ou plus léger selon le ressenti. De petits changements comptent souvent plus que de chercher le « nombre parfait ».", "Starte mit einem Standardprofil und teste dann ein Stück tiefer oder flacher nach Gefühl. Kleine Änderungen zählen oft mehr als das Jagen nach der „perfekten“ Zahl."],
@@ -456,6 +457,7 @@
         "Start with stick flex": "Start med kølleflex",
         "Three free tools": "Tre gratis verktøy", "Build a better setup": "Bygg et bedre oppsett",
         "Made for every bench": "For alle spillere", "Useful advice, not gear jargon.": "Nyttige råd, uten utstyrsjargon.",
+        "Every result is a starting point. Comfort, confidence and ice time matter more than a perfect number. Test small changes and ask a qualified skate sharpener or coach when in doubt.": "Hvert resultat er et utgangspunkt. Komfort, trygghet og tid på isen er viktigere enn et perfekt tall. Test små endringer, og spør en kvalifisert skøytesliper eller trener hvis du er usikker.",
         "Youth players": "Ungdomsspillere", "Adult recreational players": "Voksne mosjonsspillere",
         "Competitive players": "Konkurransespillere", "Parents": "Foreldre", "Hockey coaches": "Hockeytrenere",
         "Find a practical starting flex based on weight, position and playing style.": "Finn en praktisk startflex basert på vekt, posisjon og spillestil.",
@@ -493,7 +495,7 @@
         "Choose the right size": "Velg riktig størrelse", "How long should my hockey stick be?": "Hvor lang bør hockeykøllen være?",
         "Personalized recommendation": "Personlig anbefaling", "Calculate your stick length": "Beregn køllelengden din", "Player height": "Spillerens høyde",
         "Enter height in centimetres.": "Skriv inn høyden i centimeter.", "Calculate stick length": "Beregn køllelengde", "Recommended stick length": "Anbefalt køllelengde", "Acceptable range:": "Akseptabelt intervall:",
-        "With skates on, many players prefer the top near the chin. Always check blade contact and stance before cutting.": "Med skøyter på foretrekker mange at toppen når nær haken. Sjekk alltid bladkontakt og stilling før du kapper.",
+        "With skates on, many players prefer the top near the chin. Always check blade contact and stance before cutting.": "Med skøyter på foretrekker mange at toppen når nær haken. Sjekk at køllebladet har kontakt med isen og at du står naturlig før du kapper.",
         "Hockey stick sizing chart": "Størrelsestabell for hockeykøller", "Category": "Kategori", "Typical height": "Typisk høyde", "Stick class": "Kølleklasse", "Approx. length": "Omtrentlig lengde",
         "Defense preference": "Backpreferanse", "Any category": "Alle kategorier", "Same class": "Samme klasse", "Add about 1–2 in": "Legg til omtrent 2–5 cm", "Buying guide": "Kjøpsguide",
         "How to choose the correct hockey stick length": "Slik velger du riktig hockeykøllelengde", "Hockey stick length buying tips": "Kjøpstips for hockeykøller",
@@ -505,7 +507,7 @@
         "Free hockey equipment guide": "Gratis guide til hockeyutstyr", "Hockey Skate Sharpening Guide": "Guide til skøytesliping",
         "Find a standard starting hollow for grip and glide, then learn what to try next when your edges do not feel right.": "Finn en standard slipeprofil for grep og glid, og lær hva du kan prøve når kantene ikke føles riktige.",
         "Choose your hollow": "Velg slipeprofil", "What hollow should I use?": "Hvilken slipeprofil bør jeg bruke?",
-        "The hollow is the curved groove cut between the two edges of a skate blade. A smaller number, such as 1/2 inch, cuts a deeper groove and usually gives more grip. A larger number, such as 3/4 inch, gives a shallower groove and usually more glide.": "Slipeprofilen er den buete rillen mellom de to kantene på en skøyteblå. Et lavere tall, som 1/2 tomme, lager en dypere rille og gir vanligvis mer grep. Et høyere tall, som 3/4 tomme, lager en grunnere rille og gir vanligvis mer glid.",
+        "The hollow is the curved groove cut between the two edges of a skate blade. A smaller number, such as 1/2 inch, cuts a deeper groove and usually gives more grip. A larger number, such as 3/4 inch, gives a shallower groove and usually more glide.": "Slipeprofilen er den buede rillen mellom skøytejernets to kanter. Et lavere tall, som 1/2 tomme, lager en dypere rille og gir vanligvis mer grep. Et høyere tall, som 3/4 tomme, lager en grunnere rille og gir vanligvis mer glid.",
         "There is no single best hockey skate hollow. This calculator gives you a sensible starting point using weight, skill, ice and preference. Your sharpener, skating technique and actual feel should make the final decision.": "Det finnes ikke en eneste beste slipeprofil for hockeyskøyter. Denne kalkulatoren gir deg et fornuftig utgangspunkt basert på vekt, ferdighet, is og preferanse. Din skøytesliper, teknikk og faktisk følelse bør avgjøre det endelige valget.",
         "Find your starting hollow": "Finn din startslipeprofil", "Find my hollow": "Finn min slipeprofil", "Recommended hollow radius": "Anbefalt sliperadius", "Alternative options:": "Alternative valg:",
         "Skate sharpening chart": "Tabell for skøytesliping", "These are general starting points. Weight, technique and ice temperature can change how each radius feels.": "Dette er generelle utgangspunkter. Vekt, teknikk og istemperatur kan endre hvordan hver radius føles.",
@@ -526,6 +528,7 @@
         "Free, practical calculators and guides for players, parents and coaches. Get a useful starting point in under a minute.": "Gratis, praktiske beregnere og guides til spillere, forældre og trænere. Få et nyttigt udgangspunkt på under et minut.",
         "Start with stick flex": "Start med stavflex", "Three free tools": "Tre gratis værktøjer", "Build a better setup": "Skab et bedre setup",
         "Made for every bench": "Til alle spillere", "Useful advice, not gear jargon.": "Nyttige råd uden udstyrsjargon.",
+        "Every result is a starting point. Comfort, confidence and ice time matter more than a perfect number. Test small changes and ask a qualified skate sharpener or coach when in doubt.": "Hvert resultat er et udgangspunkt. Komfort, selvtillid og tid på isen betyder mere end et perfekt tal. Afprøv små ændringer, og spørg en kvalificeret skøjtesliber eller træner, hvis du er i tvivl.",
         "Youth players": "Ungdomsspillere", "Adult recreational players": "Voksne motionsspillere", "Competitive players": "Konkurrencespillere",
         "Parents": "Forældre", "Hockey coaches": "Hockeytrænere", "Calculate flex →": "Beregn flex →", "Find stick length →": "Find stavlængde →", "Choose a hollow →": "Vælg sliberadius →",
         "Hockey Stick Flex Calculator": "Beregner til hockeystavens flex", "Hockey Stick Length Calculator": "Beregner til hockeystavens længde", "Skate Sharpening Guide": "Guide til skøjteslibning"
@@ -557,7 +560,7 @@
         "Free hockey equipment guide": "Gratis guide til hockeyudstyr", "Hockey Skate Sharpening Guide": "Guide til skøjteslibning",
         "Find a standard starting hollow for grip and glide, then learn what to try next when your edges do not feel right.": "Find en standard sliberadius til greb og glid, og lær hvad du kan prøve, når kanterne ikke føles rigtige.",
         "Choose your hollow": "Vælg sliberadius", "What hollow should I use?": "Hvilken sliberadius skal jeg bruge?",
-        "The hollow is the curved groove cut between the two edges of a skate blade. A smaller number, such as 1/2 inch, cuts a deeper groove and usually gives more grip. A larger number, such as 3/4 inch, gives a shallower groove and usually more glide.": "Sliberadius er den buede rille mellem de to kanter på en skøjteblade. Et lavere tal, som 1/2 tomme, skaber en dybere rille og giver normalt mere greb. Et højere tal, som 3/4 tomme, skaber en lavere rille og giver normalt mere glid.",
+        "The hollow is the curved groove cut between the two edges of a skate blade. A smaller number, such as 1/2 inch, cuts a deeper groove and usually gives more grip. A larger number, such as 3/4 inch, gives a shallower groove and usually more glide.": "Sliberadiusen er den buede rille mellem skøjteklingens to kanter. Et lavere tal, som 1/2 tomme, skaber en dybere rille og giver normalt mere greb. Et højere tal, som 3/4 tomme, skaber en lavere rille og giver normalt mere glid.",
         "There is no single best hockey skate hollow. This calculator gives you a sensible starting point using weight, skill, ice and preference. Your sharpener, skating technique and actual feel should make the final decision.": "Der er ikke en enkelt bedste sliberadius til hockeyskøjter. Denne beregner giver dig et fornuftigt udgangspunkt baseret på vægt, færdighed, is og præference. Din skøjteforhandler, teknik og faktiske følelse skal afgøre det endelige valg.",
         "Find your starting hollow": "Find din startsradius", "Find my hollow": "Find min sliberadius", "Recommended hollow radius": "Anbefalet sliberadius", "Alternative options:": "Alternative muligheder:",
         "Skate sharpening chart": "Tabel over skøjteslibning", "Hollow": "Sliberadius", "Feel": "Følelse", "Good for": "God til", "Trade-off": "Ulempe",
@@ -576,6 +579,7 @@
         "Free, practical calculators and guides for players, parents and coaches. Get a useful starting point in under a minute.": "Ilmaiset, käytännölliset laskurit ja oppaat pelaajille, vanhemmille ja valmentajille. Löydä hyvä lähtökohta alle minuutissa.",
         "Start with stick flex": "Aloita mailan flexistä", "Three free tools": "Kolme ilmaista työkalua", "Build a better setup": "Rakenna parempi varustus",
         "Made for every bench": "Kaikille pelaajille", "Useful advice, not gear jargon.": "Hyödyllisiä neuvoja ilman varustejargonia.",
+        "Every result is a starting point. Comfort, confidence and ice time matter more than a perfect number. Test small changes and ask a qualified skate sharpener or coach when in doubt.": "Jokainen tulos on lähtökohta. Mukavuus, itseluottamus ja jäällä vietetty aika ovat tärkeämpiä kuin täydellinen luku. Kokeile pieniä muutoksia ja kysy tarvittaessa neuvoa pätevältä luistinten teroittajalta tai valmentajalta.",
         "Youth players": "Nuoret pelaajat", "Adult recreational players": "Aikuisharrastajat", "Competitive players": "Kilpapelaajat", "Parents": "Vanhemmat", "Hockey coaches": "Jääkiekkovalmentajat",
         "Calculate flex →": "Laske flex →", "Find stick length →": "Etsi mailan pituus →", "Choose a hollow →": "Valitse teroitusura →",
         "Hockey Stick Flex Calculator": "Jääkiekkomailan flexlaskuri", "Hockey Stick Length Calculator": "Jääkiekkomailan pituuslaskuri", "Skate Sharpening Guide": "Luistinten teroitusopas"
@@ -637,7 +641,7 @@
         "Can feel slower and heavier in longer glide": "Kan kännas långsammare och tyngre i längre glid",
         "Balanced": "Balanserad",
         "5/8 inch profile": "5/8 tum profil",
-        "Often the best all-round starting point for recreational and competitive players. It keeps the blade stable without being too grabby.": "Ofta den bästa allroundstarten för motions- och tävlingsspelare. Den håller bladet stabilt utan att kännas för taggigt.",
+        "Often the best all-round starting point for recreational and competitive players. It keeps the blade stable without being too grabby.": "Ofta den bästa allroundstarten för motions- och tävlingsspelare. Den håller skenan stabil utan att kännas för taggig.",
         "Good for everyday skating and mixed ice": "Bra för vardagsåkning och blandad is",
         "Offers a smooth blend of grip and glide": "Ger en jämn blandning av grepp och glid",
         "One of the most common pro shop recommendations": "Ett av de vanligaste rekommendationerna i proffshoppar",
@@ -665,13 +669,13 @@
         "Faster skater → often shallower": "Snabbare spelare → ofta grundare",
         "The pro shop way": "Proffshopens sätt",
         "Make the profile work with the player.": "Se till att profilen passar spelaren.",
-        "Pro shops rarely choose a profile by brand or marketing alone. They look at blade condition, ice type, player weight and whether the skater wants more grip for stops and turns or more glide for speed and clean edges.": "Proffshoppar väljer sällan profil enbart efter märke eller marknadsföring. De tittar på bladets skick, istyp, spelarens vikt och om skridskoåkaren vill ha mer grepp i stopp och svängar eller mer glid för fart och rena kanter.",
+        "Pro shops rarely choose a profile by brand or marketing alone. They look at blade condition, ice type, player weight and whether the skater wants more grip for stops and turns or more glide for speed and clean edges.": "Proffshoppar väljer sällan profil enbart efter märke eller marknadsföring. De tittar på skenans skick, istyp, spelarens vikt och om skridskoåkaren vill ha mer grepp i stopp och svängar eller mer glid för fart och rena kanter.",
         "Ice conditions:": "Isförhållanden:",
         "hard and fast ice usually favors a deeper profile; softer ice often rewards a shallower one.": "hård och snabb is gynnar oftast en djupare profil; mjuk is gynnar ofta en grundare profil.",
         "Skating style:": "Skridskoåkning:",
         "quick, agile players often like a little more bite; smooth and fast skaters may prefer a shallower, faster profile.": "snabba och rörliga spelare gillar ofta lite mer grepp; jämna och snabba spelare föredrar ofta en grundare och snabbare profil.",
         "Blade condition:": "Bladets skick:",
-        "a worn or uneven blade should be profiled and checked before changing the hollow dramatically.": "ett slitna eller ojämnt blad bör profileras och kontrolleras innan du ändrar profilen mycket.",
+        "a worn or uneven blade should be profiled and checked before changing the hollow dramatically.": "en sliten eller ojämn skena bör profileras och kontrolleras innan du ändrar skålradien mycket.",
         "Next step": "Nästa steg",
         "Use the correct profile": "Använd rätt profil",
         "Start with a standard profile, then test one step deeper or shallower for feel. Small changes often matter more than chasing the “perfect” number.": "Börja med en standardprofil och testa sedan ett steg djupare eller grundare för känsla. Små ändringar betyder ofta mer än att jaga ett “perfekt” tal.",
@@ -773,11 +777,11 @@
         fi: "Rajaa vaihtoehtoja mitan avulla ja tarkista maila sitten tavallisessa luisteluasennossasi. Pelkkä pituus ei huomioi mittasuhteita tai mieltymyksiä."
       },
       "Stand in skates with the blade on a flat surface. Check that the blade sits naturally and that you can handle the puck without changing your posture.": {
-        sv: "Stå i skridskor med bladet på ett plant underlag. Kontrollera att bladet ligger naturligt och att du kan hantera pucken utan att ändra hållning.",
+        sv: "Stå i skridskor med skenan på ett plant underlag. Kontrollera att skenan ligger naturligt mot underlaget och att du kan hantera pucken utan att ändra hållning.",
         fr: "Enfilez vos patins, lame posée sur une surface plane. Vérifiez que la lame repose naturellement et que vous pouvez manier le palet sans modifier votre posture.",
         de: "Stelle dich mit Schlittschuhen auf eine ebene Fläche. Prüfe, ob die Kufe natürlich aufliegt und du den Puck kontrollieren kannst, ohne deine Haltung zu verändern.",
-        no: "Stå med skøyter på og bladet på et jevnt underlag. Sjekk at bladet ligger naturlig, og at du kan håndtere pucken uten å endre stilling.",
-        da: "Stå med skøjter på og bladet på et plant underlag. Kontrollér, at bladet ligger naturligt, og at du kan håndtere pucken uden at ændre stilling.",
+        no: "Stå med skøyter på og skøytejernet på et jevnt underlag. Sjekk at skøytejernet ligger naturlig, og at du kan håndtere pucken uten å endre stilling.",
+        da: "Stå med skøjter på og klingen på et plant underlag. Kontrollér, at klingen ligger naturligt, og at du kan håndtere pucken uden at ændre stilling.",
         fi: "Seiso luistimet jalassa tasaisella alustalla. Tarkista, että terä asettuu luontevasti ja pystyt käsittelemään kiekkoa muuttamatta asentoa."
       },
       "Treat the result as a fitting aid, not a required measurement. If you are buying for a child, recheck fit as they grow rather than choosing an overly long stick to grow into.": {
@@ -789,10 +793,10 @@
         fi: "Käytä tulosta sovituksen apuna, älä ehdottomana mittana. Tarkista lapsen mailan sopivuus kasvun myötä sen sijaan, että ostaisit liian pitkän mailan kasvunvaraksi."
       },
       "This is a starting suggestion for the hollow ground across the blade. It is not a recommendation for the blade profile along its length. A smaller hollow radius makes a deeper groove and usually more bite; a larger radius makes a shallower groove and usually more glide.": {
-        sv: "Detta är ett startförslag för skålradien som slipas tvärs över bladet. Det är inte en rekommendation för skenans profil längs bladet. En mindre skålradie ger ett djupare spår och vanligtvis mer grepp; en större radie ger ett grundare spår och vanligtvis mer glid.",
+        sv: "Detta är ett startförslag för skålradien som slipas tvärs över skenan. Det är inte en rekommendation för skenans längsgående profil. En mindre skålradie ger ett djupare spår och vanligtvis mer grepp; en större radie ger ett grundare spår och vanligtvis mer glid.",
         fr: "Il s’agit d’une suggestion de départ pour le creux meulé en travers de la lame, et non pour le profil longitudinal. Un rayon de creux plus petit donne une rainure plus profonde et généralement plus d’accroche ; un rayon plus grand donne une rainure moins profonde et généralement plus de glisse.",
         de: "Dies ist ein Ausgangsvorschlag für den Hohlschliff quer zur Kufe, nicht für das Längsprofil der Kufe. Ein kleinerer Hohlschliff-Radius erzeugt eine tiefere Rille und meist mehr Grip; ein größerer Radius erzeugt eine flachere Rille und meist mehr Gleiten.",
-        no: "Dette er et startforslag for slipeprofilen som slipes på tvers av bladet, ikke for skøyteprofilen langs bladet. En mindre slipeprofilradius gir et dypere spor og vanligvis mer grep; en større radius gir et grunnere spor og vanligvis mer glid.",
+        no: "Dette er et startforslag for slipeprofilen som slipes på tvers av skøytejernet, ikke for skøyteprofilen langs skøytejernet. En mindre slipeprofilradius gir et dypere spor og vanligvis mer grep; en større radius gir et grunnere spor og vanligvis mer glid.",
         da: "Dette er et startforslag til sliberadiusen, der slibes på tværs af klingen, ikke til skøjtens profil langs klingen. En mindre sliberadius giver en dybere rille og typisk mere greb; en større radius giver en fladere rille og typisk mere glid.",
         fi: "Tämä on lähtöehdotus terän poikki hiottavalle teroitusuralle, ei terän pituussuuntaiselle profiilille. Pienempi uran säde tekee urasta syvemmän ja lisää yleensä pitoa; suurempi säde tekee urasta matalamman ja lisää yleensä luistoa."
       },
@@ -824,10 +828,10 @@
         fi: "Tarkista lopullinen pituus ja huomioi flexin muuttuminen ennen katkaisua. Pyydä apua asiantuntevasta liikkeestä, jos olet epävarma."
       },
       "Use the chart below as a comparison, not a guarantee. Your weight, technique, blade and ice can change how the same hollow feels.": {
-        sv: "Använd tabellen som jämförelse, inte som garanti. Vikt, teknik, blad och is kan påverka hur samma skålradie känns.",
+        sv: "Använd tabellen som jämförelse, inte som garanti. Vikt, teknik, skena och is kan påverka hur samma skålradie känns.",
         fr: "Utilisez le tableau comme comparaison, pas comme garantie. Votre poids, votre technique, la lame et la glace influent sur les sensations.",
         de: "Nutze die Tabelle zum Vergleich, nicht als Garantie. Gewicht, Technik, Kufe und Eis beeinflussen, wie sich derselbe Hohlschliff anfühlt.",
-        no: "Bruk tabellen til sammenligning, ikke som en garanti. Vekt, teknikk, blad og is påvirker hvordan samme slipeprofil føles.",
+        no: "Bruk tabellen til sammenligning, ikke som en garanti. Vekt, teknikk, skøytejern og is påvirker hvordan samme slipeprofil føles.",
         da: "Brug tabellen som sammenligning, ikke som garanti. Vægt, teknik, klinge og is påvirker, hvordan den samme sliberadius føles.",
         fi: "Käytä taulukkoa vertailuun, älä takuuna. Paino, tekniikka, terä ja jää vaikuttavat siihen, miltä sama teroitusura tuntuu."
       },
@@ -835,10 +839,10 @@
         sv: "Tips för nybörjare", fr: "Conseil pour débutants", de: "Hinweis für Anfänger", no: "Nybegynnertips", da: "Begyndertip", fi: "Vinkki aloittelijalle"
       },
       "A skate profile describes the blade curve from toe to heel and affects the blade’s contact with the ice and balance feel. It is different from the hollow ground across the blade, which mainly changes bite and glide.": {
-        sv: "En skridskoprofil beskriver skenans kurva från tå till häl och påverkar kontakten med isen och balanskänslan. Den skiljer sig från skålradien som slipas tvärs över bladet och främst påverkar grepp och glid.",
+        sv: "En skridskoprofil beskriver skenans kurva från tå till häl och påverkar kontakten med isen och balanskänslan. Den skiljer sig från skålradien som slipas tvärs över skenan och främst påverkar grepp och glid.",
         fr: "Le profil d’une lame décrit sa courbe de la pointe au talon et influe sur le contact avec la glace et la sensation d’équilibre. Il diffère du creux meulé en travers de la lame, qui agit surtout sur l’accroche et la glisse.",
         de: "Das Kufenprofil beschreibt die Kurve von der Spitze bis zur Ferse und beeinflusst Eiskontakt und Balancegefühl. Es unterscheidet sich vom quer geschliffenen Hohlschliff, der vor allem Grip und Gleiten beeinflusst.",
-        no: "En skøyteprofil beskriver bladets kurve fra tå til hæl og påvirker kontakten med isen og balansefølelsen. Den er forskjellig fra slipeprofilen på tvers av bladet, som hovedsakelig påvirker grep og glid.",
+        no: "En skøyteprofil beskriver skøytejernets kurve fra tå til hæl og påvirker kontakten med isen og balansefølelsen. Den er forskjellig fra slipeprofilen på tvers av skøytejernet, som hovedsakelig påvirker grep og glid.",
         da: "En skøjteprofil beskriver klingens kurve fra tå til hæl og påvirker kontakten med isen og balancefornemmelsen. Den er forskellig fra sliberadiusen på tværs af klingen, som især påvirker greb og glid.",
         fi: "Luistimen profiili kuvaa terän kaarta kärjestä kantaan ja vaikuttaa jääkosketukseen sekä tasapainon tunteeseen. Se on eri asia kuin terän poikki hiottu teroitusura, joka vaikuttaa etenkin pitoon ja luistoon."
       },
@@ -862,18 +866,18 @@
         sv: "Faktagranskning och källor", fr: "Vérification des faits et sources", de: "Faktenprüfung und Quellen", no: "Faktasjekk og kilder", da: "Faktatjek og kilder", fi: "Tietojen tarkistus ja lähteet"
       },
       "A skate profile is the blade’s curve from toe to heel. It affects how much blade contacts the ice and how the skate feels underfoot. It is different from the hollow ground across the blade.": {
-        sv: "En skridskoprofil är skenans kurva från tå till häl. Den påverkar hur mycket av skenan som har kontakt med isen och hur skridskon känns under foten. Den skiljer sig från skålradien som slipas tvärs över bladet.",
+        sv: "En skridskoprofil är skenans kurva från tå till häl. Den påverkar hur mycket av skenan som har kontakt med isen och hur skridskon känns under foten. Den skiljer sig från skålradien som slipas tvärs över skenan.",
         fr: "Le profil d’une lame est sa courbe de la pointe au talon. Il détermine la partie de la lame en contact avec la glace et les sensations sous le pied. Il diffère du creux meulé en travers de la lame.",
         de: "Ein Kufenprofil ist die Kurve der Kufe von der Spitze bis zur Ferse. Es beeinflusst, wie viel Kufe das Eis berührt und wie sich der Schlittschuh unter dem Fuß anfühlt. Es unterscheidet sich vom quer geschliffenen Hohlschliff.",
-        no: "En skøyteprofil er bladets kurve fra tå til hæl. Den påvirker hvor mye av bladet som berører isen, og hvordan skøyten føles under foten. Den er forskjellig fra slipeprofilen på tvers av bladet.",
+        no: "En skøyteprofil er skøytejernets kurve fra tå til hæl. Den påvirker hvor mye av skøytejernet som berører isen, og hvordan skøyten føles under foten. Den er forskjellig fra slipeprofilen på tvers av skøytejernet.",
         da: "En skøjteprofil er klingens kurve fra tå til hæl. Den påvirker, hvor meget af klingen der rører isen, og hvordan skøjten føles under foden. Den er forskellig fra sliberadiusen på tværs af klingen.",
         fi: "Luistimen profiili on terän kaari kärjestä kantaan. Se vaikuttaa siihen, kuinka suuri osa terästä koskettaa jäätä ja miltä luistin tuntuu jalan alla. Se eroaa terän poikki hiotusta teroitusurasta."
       },
       "Hollow sharpening is a separate choice: it shapes a groove across the blade and mainly changes bite and glide. Use the": {
-        sv: "Skålradien är ett separat val: den formar ett spår tvärs över bladet och påverkar främst grepp och glid. Använd ",
+        sv: "Skålradien är ett separat val: den formar ett spår tvärs över skenan och påverkar främst grepp och glid. Använd ",
         fr: "Le creux d’affûtage est un réglage distinct : il forme une rainure en travers de la lame et modifie surtout l’accroche et la glisse. Consultez le ",
         de: "Der Hohlschliff ist eine separate Einstellung: Er formt eine Rille quer zur Kufe und beeinflusst vor allem Grip und Gleiten. Nutze dafür den ",
-        no: "Slipeprofilen er et eget valg: Den lager et spor på tvers av bladet og påvirker hovedsakelig grep og glid. Bruk ",
+        no: "Slipeprofilen er et eget valg: Den lager et spor på tvers av skøytejernet og påvirker hovedsakelig grep og glid. Bruk ",
         da: "Sliberadiusen er et separat valg: Den former en rille på tværs af klingen og påvirker især greb og glid. Brug ",
         fi: "Teroitusura on erillinen valinta: se muodostaa terän poikki uran ja vaikuttaa pääasiassa pitoon ja luistoon. Käytä "
       },
@@ -884,10 +888,10 @@
         sv: "Använd ", fr: "Consultez le ", de: "Nutze den ", no: "Bruk ", da: "Brug ", fi: "Käytä "
       },
       "Names such as Quad, Detroit and Superior are commercial labels, not universal measurements. Ask what specific geometry will be applied to your blade; a profile affects the blade’s curve from toe to heel, while the hollow is a separate groove across the blade.": {
-        sv: "Namn som Quad, Detroit och Superior är kommersiella beteckningar, inte universella mått. Fråga vilken geometri som kommer att användas på din skena. Profilen påverkar skenans kurva från tå till häl, medan skålradien är ett separat spår tvärs över bladet.",
+        sv: "Namn som Quad, Detroit och Superior är kommersiella beteckningar, inte universella mått. Fråga vilken geometri som kommer att användas på din skena. Profilen påverkar skenans kurva från tå till häl, medan skålradien är ett separat spår tvärs över skenan.",
         fr: "Des noms comme Quad, Detroit et Superior sont des appellations commerciales, pas des mesures universelles. Demandez quelle géométrie précise sera appliquée à votre lame ; le profil décrit sa courbe de la pointe au talon, tandis que le creux forme une rainure distincte en travers de la lame.",
         de: "Namen wie Quad, Detroit und Superior sind kommerzielle Bezeichnungen, keine einheitlichen Maße. Frage nach der genauen Geometrie für deine Kufe: Das Profil beschreibt die Kurve von der Spitze bis zur Ferse, der Hohlschliff ist eine separate Rille quer zur Kufe.",
-        no: "Navn som Quad, Detroit og Superior er kommersielle betegnelser, ikke universelle mål. Spør hvilken geometri som skal brukes på bladet ditt. Profilen påvirker bladets kurve fra tå til hæl, mens slipeprofilen er et eget spor på tvers av bladet.",
+        no: "Navn som Quad, Detroit og Superior er kommersielle betegnelser, ikke universelle mål. Spør hvilken geometri som skal brukes på skøytejernet ditt. Profilen påvirker skøytejernets kurve fra tå til hæl, mens slipeprofilen er et eget spor på tvers av skøytejernet.",
         da: "Navne som Quad, Detroit og Superior er kommercielle betegnelser, ikke universelle mål. Spørg, hvilken geometri der bruges på din klinge. Profilen påvirker klingens kurve fra tå til hæl, mens sliberadiusen er en separat rille på tværs af klingen.",
         fi: "Quadin, Detroitin ja Superiorin kaltaiset nimet ovat kaupallisia nimityksiä, eivät yleispäteviä mittoja. Kysy, millainen geometria terääsi tehdään. Profiili vaikuttaa terän kaareen kärjestä kantaan, kun taas teroitusura on erillinen ura terän poikki."
       },
@@ -919,18 +923,18 @@
         sv: "för att justera grepp eller glid separat.", fr: "pour régler séparément l’accroche ou la glisse.", de: "um Grip oder Gleiten getrennt anzupassen.", no: "for å justere grep eller glid separat.", da: "for at justere greb eller glid separat.", fi: "säätääksesi pitoa tai luistoa erikseen."
       },
       "A more rounded profile can feel quicker to turn, while a flatter profile can provide more blade contact and a steadier feel. The result depends on the skater and the blade; profile names are not universal measurements.": {
-        sv: "En rundare profil kan kännas snabbare i svängar, medan en flackare profil kan ge mer bladkontakt och en stabilare känsla. Resultatet beror på spelaren och skenan; profilnamn är inga universella mått.",
+        sv: "En rundare profil kan kännas snabbare i svängar, medan en flackare profil kan ge större kontaktyta mot isen och en stabilare känsla. Resultatet beror på spelaren och skenan; profilnamn är inga universella mått.",
         fr: "Un profil plus arrondi peut sembler plus vif en virage, tandis qu’un profil plus plat peut offrir davantage de contact et de stabilité. Le résultat dépend du patineur et de la lame ; les noms de profils ne sont pas des mesures universelles.",
         de: "Ein stärker gerundetes Profil kann sich in Kurven wendiger anfühlen, ein flacheres kann mehr Kufenaufstand und ein stabileres Gefühl bieten. Das Ergebnis hängt von Person und Kufe ab; Profilnamen sind keine einheitlichen Maße.",
-        no: "En rundere profil kan føles raskere i svinger, mens en flatere profil kan gi mer bladkontakt og en stødigere følelse. Resultatet avhenger av skøyteløperen og bladet; profilnavn er ikke universelle mål.",
+        no: "En rundere profil kan føles raskere i svinger, mens en flatere profil kan gi større kontaktflate mot isen og en stødigere følelse. Resultatet avhenger av skøyteløperen og skøytejernet; profilnavn er ikke universelle mål.",
         da: "En mere afrundet profil kan føles hurtigere i sving, mens en fladere profil kan give mere klingekontakt og en mere stabil fornemmelse. Resultatet afhænger af løberen og klingen; profilnavne er ikke universelle mål.",
         fi: "Pyöreämpi profiili voi tuntua ketterämmältä käännöksissä, kun taas tasaisempi profiili voi tarjota enemmän teräkontaktia ja vakaamman tuntuman. Tulos riippuu luistelijasta ja terästä; profiilinimet eivät ole yleispäteviä mittoja."
       },
       "Hollow sharpening is a separate choice: it shapes a groove across the blade and mainly changes bite and glide. Use the hollow guide for that adjustment.": {
-        sv: "Skålradien är ett separat val: se formar ett spår tvärs över bladet och påverkar främst grepp och glid. Använd guiden om skålradie för den justeringen.",
+        sv: "Skålradien är ett separat val: den formar ett spår tvärs över skenan och påverkar främst grepp och glid. Använd guiden om skålradie för den justeringen.",
         fr: "Le creux d’affûtage est un réglage distinct : il forme une rainure en travers de la lame et modifie surtout l’accroche et la glisse. Consultez le guide du creux pour ce réglage.",
         de: "Der Hohlschliff ist eine separate Einstellung: Er formt eine Rille quer zur Kufe und beeinflusst vor allem Grip und Gleiten. Nutze dafür den Ratgeber zum Hohlschliff.",
-        no: "Slipeprofilen er et eget valg: Den lager et spor på tvers av bladet og påvirker hovedsakelig grep og glid. Bruk guiden om slipeprofil for denne justeringen.",
+        no: "Slipeprofilen er et eget valg: Den lager et spor på tvers av skøytejernet og påvirker hovedsakelig grep og glid. Bruk guiden om slipeprofil for denne justeringen.",
         da: "Sliberadiusen er et separat valg: Den former en rille på tværs af klingen og påvirker især greb og glid. Brug guiden om sliberadius til denne justering.",
         fi: "Teroitusura on erillinen valinta: se muodostaa terän poikki uran ja vaikuttaa pääasiassa pitoon ja luistoon. Käytä teroitusuraopasta tämän säädön tekemiseen."
       },
@@ -941,7 +945,7 @@
         sv: "Profilnamnen är kommersiella exempel, inte standardiserade mått. Illustrationerna är schematiska och inte skalenliga; fråga verkstaden vilken geometri som kommer att användas på just din skena.",
         fr: "Ces noms de profils commerciaux sont des exemples, pas des mesures normalisées. Les illustrations sont schématiques et non à l’échelle ; demandez à l’atelier quelle géométrie sera appliquée à votre lame.",
         de: "Diese kommerziellen Profilnamen sind Beispiele, keine standardisierten Maße. Die Abbildungen sind schematisch und nicht maßstabsgetreu; frage den Fachbetrieb, welche Geometrie auf deiner Kufe umgesetzt wird.",
-        no: "Disse kommersielle profilnavnene er eksempler, ikke standardiserte mål. Illustrasjonene er skjematiske og ikke i målestokk; spør verkstedet hvilken geometri som brukes på akkurat bladet ditt.",
+        no: "Disse kommersielle profilnavnene er eksempler, ikke standardiserte mål. Illustrasjonene er skjematiske og ikke i målestokk; spør verkstedet hvilken geometri som brukes på akkurat skøytejernet ditt.",
         da: "Disse kommercielle profilnavne er eksempler, ikke standardiserede mål. Illustrationerne er skematiske og ikke målestokstro; spørg værkstedet, hvilken geometri der bruges på netop din klinge.",
         fi: "Nämä kaupalliset profiilinimet ovat esimerkkejä, eivät standardoituja mittoja. Kuvat ovat kaaviomaisia eivätkä mittakaavassa; kysy huollosta, millainen geometria juuri omaan terääsi tehdään."
       },
@@ -1185,9 +1189,9 @@
       },
       profiling: {
         en: "Skate Profiling Guide | Common Hockey Blade Profiles",
-        sv: "Skridsko profilering | Vanliga profiler för hockeyblad",
+        sv: "Skridskoprofilering | Vanliga profiler för hockeyskenor",
         fr: "Profilage des patins | Profils de lame de hockey courants",
-        de: "Schlittschuhprofilierung | Häufige Hockey-Klingenprofile",
+        de: "Schlittschuhprofilierung | Häufige Hockey-Kufenprofile",
         no: "Skøyteprofilering | Vanlige hockeyprofileringer",
         da: "Skøjteprofilering | Almindelige hockeyprofiler",
         fi: "Luistimen profilointi | Yleiset jääkiekkoluistimen profiilit"
@@ -1349,14 +1353,14 @@
         uncertainty: "Åldersavdrag, justeringar för skor/position, avrundning till tum och intervallet ±2 tum är fasta utprovningsregler, inte en allmängiltig standard. Intervallet är inte statistiskt.",
         sensitivity: "Varje cm längd ändrar det oavrundade resultatet med cirka 0,394 tum. Det visade måttet ändras först när en avrundningsgräns passeras; ålder, skridskor och position ger fasta steg.",
         limits: "Modellen tar inte hänsyn till proportioner mellan bål, armar och ben, bladets lie, kroppsställning, klubbmodell, personlig preferens, tillväxt eller särskilda målvaktsklubbor. Målvakts-/utespelarvalet är ingen storleksmodell för målvaktsklubbor.",
-        alternative: "Ta på skridskorna, stå naturligt med bladet plant och jämför skaftets topp med höjden mellan haka och näsa. Det är en visuell kontroll, inte ett exakt mått."
+        alternative: "Ta på skridskorna, stå naturligt med klubbans blad plant mot isen och jämför skaftets topp med höjden mellan haka och näsa. Det är en visuell kontroll, inte ett exakt mått."
       },
       sharpening: {
         formula: "Starta på 5/8 tum. Vikt: under 120 lb +1/8 tum; över 210 lb −1/8 tum. Preferens: mer grepp −1/8 tum, mer glid +1/8 tum. Is: hård +1/8 tum, mjuk −1/8 tum. Färdighet: nybörjare/ungdom +1/8 tum, tävling −1/8 tum. Begränsa summan till 3/8–7/8 tum.",
         row: { base: "Startvärde för skålradie", weight: "Viktjustering", skill: "Färdighetsjustering", ice: "Isjustering", preference: "Preferensjustering", subtotal: "Värde före begränsning", final: "Begränsa till 3/8–7/8 tum", band: "Föreslaget testintervall: intilliggande steg (±1/8 tum)" },
         uncertainty: "Startvärdet 5/8 tum, viktgränserna 120/210 lb och justeringar på ±1/8 tum är fasta tumregler, inte ett uppmätt optimum. Viktregeln ger grundare skålradie under 120 lb och djupare över 210 lb; en slipare kan rekommendera annorlunda. Testintervallet är inte statistiskt.",
         sensitivity: "Varje aktiv justering ändrar råvärdet ett steg på 1/8 tum. Viktregeln ger ett plötsligt steg vid gränserna 120/210 lb; begränsningen håller rekommendationen inom 3/8–7/8 tum.",
-        limits: "Modellen tar inte hänsyn till bladets bredd/höjd eller stål, eggarnas skick, slipmaskin eller tekniker, isens exakta hårdhet/temperatur, åkteknik eller din tidigare skålradie. Viktgränserna ger dessutom plötsliga steg vid 120 och 210 lb.",
+        limits: "Modellen tar inte hänsyn till skenans bredd, höjd eller stål, eggarnas skick, slipmaskin eller tekniker, isens exakta hårdhet/temperatur, åkteknik eller din tidigare skålradie. Viktgränserna ger dessutom plötsliga steg vid 120 och 210 lb.",
         alternative: "Börja vid 5/8 tum utan vikt-, färdighets- eller isjustering och ändra sedan ett steg på 1/8 tum utifrån grepp och glid på isen. En kunnig slipare kan rekommendera ett annat startvärde."
       }
     },
@@ -1380,14 +1384,14 @@
         uncertainty: "Aldersfratrekk, justeringer for fottøy/posisjon, avrunding til tommer og intervallet ±2 tommer er faste tilpasningsregler, ikke en validert universell standard. Intervallet er ikke statistisk.",
         sensitivity: "Hver cm høyde endrer den uavrundede lengden med omtrent 0,394 tommer. Den viste lengden endres først når en avrundingsgrense passeres; alder, skøyter og posisjon gir faste sprang.",
         limits: "Modellen tar ikke hensyn til kroppsproporsjoner, bladets lie, stilling, køllemodell, personlige preferanser, vekst eller målvaktsspesifikke køller. Valget målvakt/utespiller er ikke en størrelsesmodell for målvaktskøller.",
-        alternative: "Ta på skøytene, stå naturlig med bladet flatt, og sammenlign skafttoppen med høyden fra hake til nese. Dette er en visuell kontroll, ikke et eksakt mål."
+        alternative: "Ta på skøytene, stå naturlig med køllebladet flatt mot isen, og sammenlign skafttoppen med høyden fra hake til nese. Dette er en visuell kontroll, ikke et eksakt mål."
       },
       sharpening: {
         formula: "Start på 5/8 tomme. Vekt: under 120 lb +1/8 tomme; over 210 lb −1/8 tomme. Preferanse: grep −1/8 tomme, glid +1/8 tomme. Is: hard +1/8 tomme, myk −1/8 tomme. Ferdighet: nybegynner/ungdom +1/8 tomme, konkurranse −1/8 tomme. Begrens summen til 3/8–7/8 tomme.",
         row: { base: "Startverdi for slipeprofil", weight: "Vektjustering", skill: "Ferdighetsjustering", ice: "Isjustering", preference: "Preferansejustering", subtotal: "Verdi før begrensning", final: "Begrens til 3/8–7/8 tomme", band: "Foreslått testområde: nabotrinn (±1/8 tomme)" },
         uncertainty: "Startverdien 5/8 tomme, vektgrensene 120/210 lb og justeringer på ±1/8 tomme er faste tommelfingerregler, ikke et målt optimum. Vektregelen gir grunnere profil under 120 lb og dypere over 210 lb; en skøytesliper kan anbefale noe annet. Testområdet er ikke statistisk.",
         sensitivity: "Hver aktiv justering endrer råverdien med ett trinn på 1/8 tomme. Vektregelen gir et brått sprang ved grensene 120/210 lb; begrensningen holder anbefalingen innenfor 3/8–7/8 tomme.",
-        limits: "Modellen tar ikke hensyn til bladets bredde/høyde og stål, eggtilstand, slipemaskin eller tekniker, nøyaktig ishårdhet/-temperatur, skøyteteknikk eller din forrige slipeprofil. Vektgrensene gir også brå sprang ved 120 og 210 lb.",
+        limits: "Modellen tar ikke hensyn til skøytejernets bredde, høyde og stål, eggtilstand, slipemaskin eller tekniker, nøyaktig ishårdhet/-temperatur, skøyteteknikk eller din forrige slipeprofil. Vektgrensene gir også brå sprang ved 120 og 210 lb.",
         alternative: "Start på 5/8 tomme uten justering for vekt, ferdighet eller is, og endre deretter ett trinn på 1/8 tomme ut fra grep og glid på isen. En fagkyndig skøytesliper kan anbefale en annen startverdi."
       }
     },
@@ -1411,14 +1415,14 @@
         uncertainty: "Aldersfradrag, justeringer for fodtøj/position, afrunding til tommer og intervallet ±2 tommer er faste tilpasningsregler, ikke en valideret universel standard. Intervallet er ikke statistisk.",
         sensitivity: "Hver cm højde ændrer den uafrundede længde med cirka 0,394 tomme. Den viste længde ændres først, når en afrundingsgrænse krydses; alder, skøjter og position giver faste spring.",
         limits: "Modellen tager ikke højde for kropsproportioner, bladets lie, stilling, stavmodel, personlige præferencer, vækst eller målmandsspecifikke stave. Valget målmand/markspiller er ikke en størrelsesmodel for målmandsstave.",
-        alternative: "Tag skøjter på, stå naturligt med bladet fladt, og sammenlign skaftets top med højden fra hage til næse. Det er en visuel kontrol, ikke et præcist mål."
+        alternative: "Tag skøjter på, stå naturligt med køllebladet fladt mod isen, og sammenlign skaftets top med højden fra hage til næse. Det er en visuel kontrol, ikke et præcist mål."
       },
       sharpening: {
         formula: "Start ved 5/8 tomme. Vægt: under 120 lb +1/8 tomme; over 210 lb −1/8 tomme. Præference: greb −1/8 tomme, glid +1/8 tomme. Is: hård +1/8 tomme, blød −1/8 tomme. Færdighed: begynder/ungdom +1/8 tomme, konkurrence −1/8 tomme. Begræns summen til 3/8–7/8 tomme.",
         row: { base: "Startværdi for sliberadius", weight: "Vægtjustering", skill: "Færdighedsjustering", ice: "Isjustering", preference: "Præferencejustering", subtotal: "Værdi før begrænsning", final: "Begræns til 3/8–7/8 tomme", band: "Foreslået testinterval: nabotrin (±1/8 tomme)" },
         uncertainty: "Startværdien 5/8 tomme, vægtgrænserne 120/210 lb og justeringer på ±1/8 tomme er faste tommelfingerregler, ikke et målt optimum. Vægtreglen giver en fladere sliberadius under 120 lb og dybere over 210 lb; en skøjtesliber kan anbefale noget andet. Testintervallet er ikke statistisk.",
         sensitivity: "Hver aktiv justering ændrer råværdien med ét trin på 1/8 tomme. Vægtreglen giver et brat spring ved grænserne 120/210 lb; begrænsningen holder anbefalingen mellem 3/8 og 7/8 tomme.",
-        limits: "Modellen tager ikke højde for bladets bredde/højde og stål, æggenes tilstand, slibemaskine eller tekniker, præcis ishårdhed/-temperatur, skøjteteknik eller din tidligere sliberadius. Vægtgrænserne giver desuden spring ved 120 og 210 lb.",
+        limits: "Modellen tager ikke højde for klingens bredde, højde og stål, æggenes tilstand, slibemaskine eller tekniker, præcis ishårdhed/-temperatur, skøjteteknik eller din tidligere sliberadius. Vægtgrænserne giver desuden spring ved 120 og 210 lb.",
         alternative: "Start ved 5/8 tomme uden justering for vægt, færdighed eller is, og skift derefter ét trin på 1/8 tomme ud fra greb og glid på isen. En erfaren skøjtesliber kan anbefale en anden startværdi."
       }
     },
@@ -1756,11 +1760,11 @@
       }
       $("length-message").textContent = resultMessage({
         en: position === "defense" ? "This slightly longer starting point adds reach for poke checks and passing while keeping a comfortable stance." : "This is measured for a natural skating stance. Confirm the blade sits flat before cutting.",
-        sv: position === "defense" ? "Den här något längre startpunkten ger bättre räckvidd för petningar och passningar med en bekväm hållning." : "Det här måttet är anpassat för en naturlig skridskohållning. Kontrollera att bladet ligger plant före kapning.",
+        sv: position === "defense" ? "Den här något längre startpunkten ger bättre räckvidd för petningar och passningar med en bekväm hållning." : "Det här måttet är anpassat för en naturlig skridskohållning. Kontrollera att klubbans blad ligger plant mot isen före kapning.",
         fr: position === "defense" ? "Ce point de départ légèrement plus long offre plus de portée pour les poke-checks et les passes, tout en gardant une posture confortable." : "Cette mesure correspond à une posture naturelle sur les patins. Vérifiez que la lame repose à plat avant de couper.",
         de: position === "defense" ? "Dieser etwas längere Ausgangspunkt bietet mehr Reichweite für Poke-Checks und Pässe bei bequemer Haltung." : "Dieses Maß ist für eine natürliche Haltung auf dem Eis gedacht. Prüfe vor dem Kürzen, ob die Kufe flach aufliegt.",
-        no: position === "defense" ? "Dette litt lengre utgangspunktet gir bedre rekkevidde for poke-checker og pasninger med en komfortabel stilling." : "Dette målet er beregnet for en naturlig skøytestilling. Sjekk at bladet ligger flatt før du kapper.",
-        da: position === "defense" ? "Dette lidt længere udgangspunkt giver ekstra rækkevidde til poke-checks og afleveringer i en behagelig stilling." : "Målet er beregnet til en naturlig skøjteløbsstilling. Kontrollér at bladet ligger fladt før afkortning.",
+        no: position === "defense" ? "Dette litt lengre utgangspunktet gir bedre rekkevidde for poke-checker og pasninger med en komfortabel stilling." : "Dette målet er beregnet for en naturlig skøytestilling. Sjekk at køllebladet ligger flatt mot isen før du kapper.",
+        da: position === "defense" ? "Dette lidt længere udgangspunkt giver ekstra rækkevidde til poke-checks og afleveringer i en behagelig stilling." : "Målet er beregnet til en naturlig skøjteløbsstilling. Kontrollér, at køllebladet ligger fladt mod isen før afkortning.",
         fi: position === "defense" ? "Tämä hieman pidempi lähtökohta antaa lisää ulottuvuutta riistoihin ja syöttöihin mukavassa asennossa." : "Mitta on tarkoitettu luonnolliseen luisteluasentoon. Tarkista, että lapa osuu tasaisesti jäähän ennen lyhentämistä."
       });
     });

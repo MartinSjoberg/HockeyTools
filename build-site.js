@@ -151,9 +151,10 @@ function buildLocalizedPage(page, language, origin, seo) {
     return match.replace(/>$/, ' data-localized-seo="true">');
   }, `body in ${page.key}`);
 
-  const alternateLinks = languages.map((alternateLanguage) =>
-    `  <link rel="alternate" hreflang="${alternateLanguage}" href="${getPageUrl(origin, alternateLanguage, page.slug)}">`
-  );
+  const alternateLinks = languages.map((alternateLanguage) => {
+    const hreflang = alternateLanguage === "no" ? "nb" : alternateLanguage;
+    return `  <link rel="alternate" hreflang="${hreflang}" href="${getPageUrl(origin, alternateLanguage, page.slug)}">`;
+  });
   alternateLinks.push(
     `  <link rel="alternate" hreflang="x-default" href="${getPageUrl(origin, "en", page.slug)}">`
   );
