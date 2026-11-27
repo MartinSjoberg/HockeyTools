@@ -6,7 +6,7 @@
       "home": {"title": "Hockey Tools | Stick & Skate Guides", "description": "Practical hockey stick, skate sharpening and equipment guides for players, parents and coaches."},
       "flex": {"description": "Estimate a starting hockey stick flex from player weight, height, age and playing style. Compare nearby options before choosing a stick."},
       "length": {"description": "Estimate a hockey stick length from player height, skates, age and position, then check the fit in a natural skating stance."},
-      "sharpening": {"description": "Understand hockey skate hollow radius, compare grip and glide, and use a calculator to find a starting point."},
+      "sharpening": {"description": "Understand hockey skate hollow radius in mm, compare 5/8\" (15.9 mm) and 1/2\" (12.7 mm) for grip and glide, and use a calculator to find a starting point."},
       "profiling": {"description": "A sourced guide to hockey skate profiling: Quad Zero, Quad, Zuperior, Ellipse and single-radius geometry, history, biomechanics, comparisons and FAQ."},
       "titles": {
         "index": "Hockey Tools | Stick & Skate Guides",
@@ -30,7 +30,7 @@
       "home": {"title": "Hockeyverktyg | Guider för klubbor och skridskor", "description": "Praktiska guider om hockeyklubbor, skridskoslipning och utrustning för spelare, föräldrar och tränare."},
       "flex": {"description": "Beräkna en startpunkt för hockeyklubbans flex utifrån vikt, längd, ålder och spelstil. Jämför närliggande alternativ innan du väljer klubba."},
       "length": {"description": "Beräkna en ungefärlig klubblängd utifrån längd, skridskor, ålder och position. Kontrollera sedan passformen i din vanliga skridskohållning."},
-      "sharpening": {"description": "Lär dig skillnaden mellan skålradie, grepp och glid och använd kalkylatorn för att hitta en startpunkt för skridskoslipning."},
+      "sharpening": {"description": "Jämför 5/8\" (15,9 mm) och 1/2\" (12,7 mm) skålradie för grepp och glid och hitta en startpunkt för skridskoslipning."},
       "profiling": {"description": "Källbelagd guide till skridskoprofilering: Quad Zero, Quad, Zuperior och Ellipse. Läs om historia, geometri, biomekanik, jämförelser och vanliga frågor."},
       "titles": {
         "index": "Hockeyverktyg | Guider för klubbor och skridskor",
@@ -54,7 +54,7 @@
       "home": {"title": "Hockeyverktøy | Guider for køller og skøyter", "description": "Praktiske guider om hockeykøller, skøytesliping og utstyr for spillere, foreldre og trenere."},
       "flex": {"description": "Finn et utgangspunkt for hockeykøllens flex ut fra vekt, høyde, alder og spillestil. Sammenlign nærliggende alternativer før du velger kølle."},
       "length": {"description": "Beregn en omtrentlig køllelengde ut fra høyde, skøyter, alder og posisjon. Kontroller deretter passformen i vanlig skøytestilling."},
-      "sharpening": {"description": "Lær om slipeprofil, grep og glid, og bruk kalkulatoren til å finne et utgangspunkt for skøytesliping."},
+      "sharpening": {"description": "Sammenlign 5/8\" (15,9 mm) og 1/2\" (12,7 mm) slipeprofil for grep og glid, og finn et utgangspunkt for skøytesliping."},
       "profiling": {"description": "Kildebelagt guide til skøyteprofilering: Quad Zero, Quad, Zuperior og Ellipse. Historie, geometri, biomekanikk, sammenligninger og FAQ."},
       "titles": {
         "index": "Hockeyverktøy | Guider for køller og skøyter",
@@ -78,7 +78,7 @@
       "home": {"title": "Hockeyværktøjer | Guides til stave og skøjter", "description": "Praktiske guides om hockeystave, skøjteslibning og udstyr til spillere, forældre og trænere."},
       "flex": {"description": "Find et udgangspunkt for hockeystavens flex ud fra vægt, højde, alder og spillestil. Sammenlign nærliggende muligheder, før du vælger stav."},
       "length": {"description": "Beregn en omtrentlig stavlængde ud fra højde, skøjter, alder og position. Kontrollér derefter pasformen i din normale skøjtestilling."},
-      "sharpening": {"description": "Lær om sliberadius, greb og glid, og brug beregneren til at finde et udgangspunkt for skøjteslibning."},
+      "sharpening": {"description": "Sammenlign 5/8\" (15,9 mm) og 1/2\" (12,7 mm) sliberadius for greb og glid, og find et udgangspunkt for skøjteslibning."},
       "profiling": {"description": "Kildebelagt guide til skøjteprofilering: Quad Zero, Quad, Zuperior og Ellipse. Historie, geometri, biomekanik, sammenligninger og FAQ."},
       "titles": {
         "index": "Hockeyværktøjer | Guides til stave og skøjter",
@@ -102,7 +102,7 @@
       "home": {"title": "Jääkiekon työkalut | Opas mailoihin ja luistimiin", "description": "Käytännön oppaita jääkiekkomailoista, luistinten teroituksesta ja varusteista pelaajille, vanhemmille ja valmentajille."},
       "flex": {"description": "Arvioi mailan flexin lähtökohta painon, pituuden, iän ja pelityylin perusteella. Vertaa lähellä olevia vaihtoehtoja ennen mailan valintaa."},
       "length": {"description": "Arvioi jääkiekkomailan pituus pelaajan pituuden, luistinten, iän ja pelipaikan perusteella. Tarkista sopivuus normaalissa luisteluasennossa."},
-      "sharpening": {"description": "Tutustu teroitusuraan, pitoon ja luistoon ja löydä laskurilla sopiva lähtökohta luistinten teroitukseen."},
+      "sharpening": {"description": "Vertaa 5/8\" (15,9 mm) ja 1/2\" (12,7 mm) teroitusuraa pidon ja luiston kannalta ja löydä sopiva lähtökohta luistinten teroitukseen."},
       "profiling": {"description": "Lähteisiin perustuva opas luistinten profilointiin: Quad Zero, Quad, Zuperior ja Ellipse. Historia, geometria, biomekaniikka, vertailut ja usein kysyttyä."},
       "titles": {
         "index": "Jääkiekon työkalut | Opas mailoihin ja luistimiin",
@@ -126,7 +126,7 @@
       "home": {"title": "Hockey-Tools | Ratgeber für Schläger und Schlittschuhe", "description": "Praktische Ratgeber zu Hockeyschlägern, Schlittschuhschliff und Ausrüstung für Spieler, Eltern und Trainer."},
       "flex": {"description": "Finde einen Flex-Ausgangspunkt anhand von Gewicht, Größe, Alter und Spielstil. Vergleiche benachbarte Optionen, bevor du einen Schläger auswählst."},
       "length": {"description": "Schätze die passende Hockeyschlägerlänge anhand von Größe, Schlittschuhen, Alter und Position ein. Prüfe anschließend die Passform in deiner Laufhaltung."},
-      "sharpening": {"description": "Erfahre mehr über Hohlschliff, Grip und Gleiten und nutze den Rechner als Ausgangspunkt für den Schlittschuhschliff."},
+      "sharpening": {"description": "Vergleiche 5/8\" (15,9 mm) und 1/2\" (12,7 mm) Hohlschliff für Grip und Gleiten und finde einen Ausgangspunkt für den Schlittschuhschliff."},
       "profiling": {"description": "Quellenbasierter Ratgeber zur Schlittschuhprofilierung: Quad Zero, Quad, Zuperior und Ellipse. Geschichte, Geometrie, Biomechanik, Vergleiche und FAQ."},
       "titles": {
         "index": "Hockey-Tools | Ratgeber für Schläger und Schlittschuhe",
@@ -150,7 +150,7 @@
       "home": {"title": "Outils de hockey | Guides sur les crosses et les patins", "description": "Des guides pratiques sur les crosses de hockey, l’affûtage des patins et l’équipement, pour les joueurs, les parents et les entraîneurs."},
       "flex": {"description": "Estimez un flex de départ selon le poids, la taille, l’âge et le style de jeu. Comparez les options proches avant de choisir une crosse."},
       "length": {"description": "Estimez la longueur d’une crosse selon la taille, les patins, l’âge et le poste, puis vérifiez l’ajustement en posture de patinage."},
-      "sharpening": {"description": "Comprenez le creux d’affûtage, l’accroche et la glisse, et utilisez le calculateur pour trouver un point de départ."},
+      "sharpening": {"description": "Comparez un creux de 5/8\" (15,9 mm) et de 1/2\" (12,7 mm) pour l’accroche et la glisse, et trouvez un point de départ pour l’affûtage."},
       "profiling": {"description": "Guide sourcé du profilage des patins : Quad Zero, Quad, Zuperior et Ellipse. Histoire, géométrie, biomécanique, comparaisons et FAQ."},
       "titles": {
         "index": "Outils de hockey | Guides sur les crosses et les patins",

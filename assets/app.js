@@ -3,6 +3,172 @@
 
   const $ = (id) => document.getElementById(id);
   const roundToFive = (value) => Math.max(5, Math.round(value / 5) * 5);
+  const measurementMarker = "\uE000";
+  const hockeyConversions = Object.freeze({ millimetersPerInch: 25.4, centimetersPerInch: 2.54, metersPerFoot: 0.3048 });
+  const hollowMillimeters = Object.freeze({
+    "1/8": 3.2, "3/8": 9.5, "7/16": 11.1, "1/2": 12.7, "9/16": 14.3,
+    "5/8": 15.9, "11/16": 17.5, "3/4": 19.1, "7/8": 22.2, "1": 25.4
+  });
+  const metricSuffix = String.raw`(?:\s*\(\s*[\d.,\s–−-]+\s*(?:mm|cm|m)\s*\))?`;
+  const inchNumber = String.raw`(?:\d+\/\d+|\d+(?:[.,]\d+)?)`;
+  const inchUnit = String.raw`(?:"|″|inch(?:es)?|in\.?|tum(?:s)?|tomme(?:r)?|tuumaa?|zoll|pouces?)`;
+
+  const measurementValue = (value) => {
+    const [numerator, denominator] = value.replace(",", ".").split("/");
+    return denominator ? Number(numerator) / Number(denominator) : Number(numerator);
+  };
+  const metricNumber = (value, digits, code, fixed = false) => {
+    const factor = 10 ** digits;
+    const rounded = Math.round((value + Number.EPSILON * Math.max(1, Math.abs(value))) * factor) / factor;
+    return new Intl.NumberFormat(code, {
+      minimumFractionDigits: fixed ? digits : 0,
+      maximumFractionDigits: digits,
+      useGrouping: false
+    }).format(rounded);
+  };
+  const formatHollowMetric = (value, code) => {
+    const metric = hollowMillimeters[value] ?? measurementValue(value) * hockeyConversions.millimetersPerInch;
+    return `${metricNumber(metric, 0, code, true)} mm`;
+  };
+  const formatInchRangeMetric = (imperial, code) => {
+    const values = imperial.match(new RegExp(inchNumber, "g")) || [];
+    const millimeters = values.every((value) => measurementValue(value) <= 1);
+    const converted = values.map((value) => {
+      const inches = measurementValue(value);
+      return millimeters
+        ? metricNumber(inches * hockeyConversions.millimetersPerInch, 0, code, true)
+        : metricNumber(inches * hockeyConversions.centimetersPerInch, 1, code);
+    });
+    const separator = /[–−-]/.test(imperial) ? "–" : ", ";
+    return `${converted.join(separator)} ${millimeters ? "mm" : "cm"}`;
+  };
+  const formatFootMetric = (imperial, code) => {
+    const values = imperial.match(/\d+(?:[.,]\d+)?/g) || [];
+    const converted = values.map((value) => metricNumber(measurementValue(value) * hockeyConversions.metersPerFoot, 2, code, true));
+    const separator = /[–−-]/.test(imperial) ? "–" : ", ";
+    return `${converted.join(separator)} m`;
+  };
+  const replaceMeasurements = (text, pattern, getMetric) => text.replace(pattern, (match, ...args) => {
+    const groups = args[args.length - 1];
+    return `${groups.imperial}${measurementMarker}${getMetric(groups.imperial)}${measurementMarker}`;
+  });
+  const formatHockeyMeasurements = (text, code, page) => {
+    const suffix = String.raw`(?<existing>${metricSuffix})`;
+    const footRange = new RegExp(
+      String.raw`(?<imperial>\d+(?:\s*[-–]\s*\d+)+\s*(?:ft|feet|foot)\b)(?!\uE000)${suffix}`,
+      "gi"
+    );
+    const footList = new RegExp(
+      String.raw`(?<imperial>\d+(?:\s*,\s*\d+)*(?:\s*(?:and|og|et|und)\s*\d+)?\s*(?:ft|feet|foot)\b)(?!\uE000)${suffix}`,
+      "gi"
+    );
+    const footInch = new RegExp(
+      String.raw`(?<imperial>(?<![\w\d])\d+\s*['′’]\s*\d+(?:[.,]\d+)?\s*(?:"|″))${suffix}`,
+      "gi"
+    );
+    const feet = new RegExp(
+      String.raw`(?<imperial>(?<![\w\d])\d+(?:[.,]\d+)?\s*(?:(?:feet|foot|ft)\b|[′’']))(?!\uE000)(?!\s*\d+\s*(?:"|″))${suffix}`,
+      "gi"
+    );
+    const inchRange = new RegExp(
+      String.raw`(?<imperial>(?<![\w/])${inchNumber}(?:\s*[–−-]\s*${inchNumber})+\s*${inchUnit})(?!\uE000)(?![A-Za-z])${suffix}`,
+      "gi"
+    );
+    const inches = new RegExp(
+      String.raw`(?<imperial>(?<![\w/])${inchNumber}\s*${inchUnit})(?!\uE000)(?![A-Za-z])${suffix}`,
+      "gi"
+    );
+
+    let formatted = replaceMeasurements(text, footRange, (value) => formatFootMetric(value, code));
+    formatted = replaceMeasurements(formatted, footList, (value) => formatFootMetric(value, code));
+    formatted = replaceMeasurements(formatted, footInch, (value) => {
+      const [, feetValue, inchesValue] = value.match(/(\d+)\s*['′’]\s*(\d+(?:[.,]\d+)?)/) || [];
+      return `${metricNumber((Number(feetValue) * 12 + Number(inchesValue.replace(",", "."))) * hockeyConversions.centimetersPerInch, 1, code, true)} cm`;
+    });
+    formatted = replaceMeasurements(formatted, feet, (value) => formatFootMetric(value, code));
+    formatted = replaceMeasurements(formatted, inchRange, (value) => formatInchRangeMetric(value, code));
+    formatted = replaceMeasurements(formatted, inches, (value) => {
+      const measurement = value.match(new RegExp(inchNumber))[0];
+      return measurement.includes("/") || measurementValue(measurement) <= 1
+        ? formatHollowMetric(measurement, code)
+        : `${metricNumber(measurementValue(measurement) * hockeyConversions.centimetersPerInch, 1, code)} cm`;
+    });
+
+    if (page === "sharpening") {
+      const unmarkedHollows = new RegExp(
+        String.raw`(?<imperial>(?<![\w/])(?:1\/8|3\/8|7\/16|1\/2|9\/16|5\/8|11\/16|3\/4|7\/8)(?![\d/]))(?!\uE000)(?!\s*[–−-]\s*\d+\/\d+)(?!\s*(?:${inchUnit}))(?!\s*["″])${suffix}`,
+        "gi"
+      );
+      formatted = replaceMeasurements(formatted, unmarkedHollows, (value) => formatHollowMetric(value.trim(), code))
+        .replace(/(?<imperial>[\d/]+)\uE000/g, '$1"\uE000');
+    }
+
+    return formatted;
+  };
+  const formatHockeyMeasurementsAsText = (text, code, page) =>
+    formatHockeyMeasurements(text, code, page).replace(
+      new RegExp(`${measurementMarker}([^${measurementMarker}]+)${measurementMarker}`, "g"),
+      " ($1)"
+    );
+  const clearFormattedMeasurements = (root) => {
+    root.querySelectorAll("[data-hockey-measurement-output]").forEach((wrapper) => {
+      const text = document.createTextNode(wrapper.__htMeasurementSource);
+      if (wrapper.__htOriginal) text.__htOriginal = wrapper.__htOriginal;
+      wrapper.replaceWith(text);
+    });
+  };
+  const formatMeasurementsInElement = (root, code, page) => {
+    if (!root) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (
+        node.textContent.trim() &&
+        !node.parentElement.closest("script, style, select, [data-hockey-measurement-output]")
+      ) nodes.push(node);
+    }
+    nodes.forEach((node) => {
+      const source = node.textContent;
+      const formatted = formatHockeyMeasurements(source, code, page);
+      if (!formatted.includes(measurementMarker)) return;
+      const wrapper = document.createElement("span");
+      wrapper.dataset.hockeyMeasurementOutput = "";
+      wrapper.__htMeasurementSource = source;
+      wrapper.__htOriginal = node.__htOriginal;
+      const parts = formatted.split(measurementMarker);
+      parts.forEach((part, index) => {
+        if (index % 2 === 0) {
+          if (part) wrapper.append(document.createTextNode(part));
+        } else {
+          const equivalent = document.createElement("span");
+          equivalent.className = "metric-equivalent";
+          equivalent.textContent = ` (${part})`;
+          wrapper.append(equivalent);
+        }
+      });
+      node.replaceWith(wrapper);
+    });
+  };
+  const formatMeasurementMetadata = (code, page) => {
+    document.title = formatHockeyMeasurementsAsText(document.title, code, page);
+    document.querySelectorAll('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]')
+      .forEach((meta) => {
+        meta.content = formatHockeyMeasurementsAsText(meta.content, code, page);
+      });
+    document.querySelectorAll('script[type="application/ld+json"]').forEach((script) => {
+      if (!script.__htOriginalJsonLd) script.__htOriginalJsonLd = script.textContent;
+      const localizeMeasurements = (value) => {
+        if (typeof value === "string") return formatHockeyMeasurementsAsText(value, code, page);
+        if (Array.isArray(value)) return value.map(localizeMeasurements);
+        if (value && typeof value === "object") {
+          return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, localizeMeasurements(child)]));
+        }
+        return value;
+      };
+      script.textContent = JSON.stringify(localizeMeasurements(JSON.parse(script.__htOriginalJsonLd)));
+    });
+  };
 
   const translations = {
     en: { language: "Language", flex: "Stick Flex", length: "Stick Length", skates: "Skate Sharpening", profiling: "Skate Profiling", recommended: "Your recommendation", home: "Hockey Tools" },
@@ -1000,6 +1166,7 @@
   const language = localizedRouteMatch ? localizedRouteMatch[1] : localizedRoute ? "en" : localStorage.getItem("hockeytools-language") || "en";
   const applyLanguage = (code) => {
     code = translations[code] ? code : "en";
+    clearFormattedMeasurements(document.body);
     document.querySelectorAll("[data-swedish-content]").forEach((element) => {
       element.hidden = code !== "sv";
     });
@@ -1144,12 +1311,12 @@
     if (lengthChart) {
       const chart = {
         en: [["Youth", "3'0\"–4'4\"", "Youth", "36–50 in"], ["Junior", "4'0\"–5'2\"", "Junior", "46–57 in"], ["Intermediate", "5'0\"–5'6\"", "Intermediate", "55–60 in"], ["Senior", "5'4\"+", "Senior", "58–63 in"], ["Defense preference", "Any category", "Same class", "Add about 1–2 in"]],
-        sv: [["Ungdom", "91–132 cm", "Ungdom", "91–127 cm"], ["Junior", "122–157 cm", "Junior", "117–145 cm"], ["Intermediate", "152–168 cm", "Intermediate", "140–152 cm"], ["Senior", "163+ cm", "Senior", "147–160 cm"], ["Backpreferens", "Alla kategorier", "Samma klass", "Lägg till cirka 2–5 cm"]],
-        fr: [["Jeunes", "91–132 cm", "Jeunes", "91–127 cm"], ["Junior", "122–157 cm", "Junior", "117–145 cm"], ["Intermédiaire", "152–168 cm", "Intermédiaire", "140–152 cm"], ["Senior", "163+ cm", "Senior", "147–160 cm"], ["Préférence défense", "Toutes catégories", "Même catégorie", "Ajouter environ 2–5 cm"]],
-        de: [["Jugend", "91–132 cm", "Jugend", "91–127 cm"], ["Junior", "122–157 cm", "Junior", "117–145 cm"], ["Intermediate", "152–168 cm", "Intermediate", "140–152 cm"], ["Senior", "163+ cm", "Senior", "147–160 cm"], ["Verteidiger-Präferenz", "Jede Kategorie", "Gleiche Kategorie", "Etwa 2–5 cm hinzufügen"]],
-        no: [["Ungdom", "91–132 cm", "Ungdom", "91–127 cm"], ["Junior", "122–157 cm", "Junior", "117–145 cm"], ["Intermediate", "152–168 cm", "Intermediate", "140–152 cm"], ["Senior", "163+ cm", "Senior", "147–160 cm"], ["Backpreferanse", "Alle kategorier", "Samme klasse", "Legg til ca. 2–5 cm"]],
-        da: [["Ungdom", "91–132 cm", "Ungdom", "91–127 cm"], ["Junior", "122–157 cm", "Junior", "117–145 cm"], ["Intermediate", "152–168 cm", "Intermediate", "140–152 cm"], ["Senior", "163+ cm", "Senior", "147–160 cm"], ["Forsvarspræference", "Alle kategorier", "Samme klasse", "Tilføj ca. 2–5 cm"]],
-        fi: [["Nuoret", "91–132 cm", "Nuoret", "91–127 cm"], ["Juniorit", "122–157 cm", "Juniorit", "117–145 cm"], ["Välisarja", "152–168 cm", "Välisarja", "140–152 cm"], ["Seniorit", "163+ cm", "Seniorit", "147–160 cm"], ["Puolustajan valinta", "Kaikki luokat", "Sama luokka", "Lisää noin 2–5 cm"]]
+        sv: [["Ungdom", "3'0\"–4'4\"", "Ungdom", "36–50 in"], ["Junior", "4'0\"–5'2\"", "Junior", "46–57 in"], ["Intermediate", "5'0\"–5'6\"", "Intermediate", "55–60 in"], ["Senior", "5'4\"+", "Senior", "58–63 in"], ["Backpreferens", "Alla kategorier", "Samma klass", "Lägg till cirka 1–2 tum"]],
+        fr: [["Jeunes", "3'0\"–4'4\"", "Jeunes", "36–50 in"], ["Junior", "4'0\"–5'2\"", "Junior", "46–57 in"], ["Intermédiaire", "5'0\"–5'6\"", "Intermédiaire", "55–60 in"], ["Senior", "5'4\"+", "Senior", "58–63 in"], ["Préférence défense", "Toutes catégories", "Même catégorie", "Ajouter environ 1–2 pouces"]],
+        de: [["Jugend", "3'0\"–4'4\"", "Jugend", "36–50 in"], ["Junior", "4'0\"–5'2\"", "Junior", "46–57 in"], ["Intermediate", "5'0\"–5'6\"", "Intermediate", "55–60 in"], ["Senior", "5'4\"+", "Senior", "58–63 in"], ["Verteidiger-Präferenz", "Jede Kategorie", "Gleiche Kategorie", "Etwa 1–2 Zoll hinzufügen"]],
+        no: [["Ungdom", "3'0\"–4'4\"", "Ungdom", "36–50 in"], ["Junior", "4'0\"–5'2\"", "Junior", "46–57 in"], ["Intermediate", "5'0\"–5'6\"", "Intermediate", "55–60 in"], ["Senior", "5'4\"+", "Senior", "58–63 in"], ["Backpreferanse", "Alle kategorier", "Samme klasse", "Legg til ca. 1–2 tommer"]],
+        da: [["Ungdom", "3'0\"–4'4\"", "Ungdom", "36–50 in"], ["Junior", "4'0\"–5'2\"", "Junior", "46–57 in"], ["Intermediate", "5'0\"–5'6\"", "Intermediate", "55–60 in"], ["Senior", "5'4\"+", "Senior", "58–63 in"], ["Forsvarspræference", "Alle kategorier", "Samme klasse", "Tilføj ca. 1–2 tommer"]],
+        fi: [["Nuoret", "3'0\"–4'4\"", "Nuoret", "36–50 in"], ["Juniorit", "4'0\"–5'2\"", "Juniorit", "46–57 in"], ["Välisarja", "5'0\"–5'6\"", "Välisarja", "55–60 in"], ["Seniorit", "5'4\"+", "Seniorit", "58–63 in"], ["Puolustajan valinta", "Kaikki luokat", "Sama luokka", "Lisää noin 1–2 tuumaa"]]
       };
       lengthChart.querySelectorAll("tbody tr").forEach((row, rowIndex) => {
         row.querySelectorAll("td").forEach((cell, cellIndex) => {
@@ -1274,14 +1441,9 @@
     if (currentPage === "sharpening") {
       const bandLabel = $("hollow-range-label");
       if (bandLabel) bandLabel.textContent = sharpeningBandLabels[code] || sharpeningBandLabels.en;
-      document.querySelectorAll("body *").forEach((element) => {
-        element.childNodes.forEach((node) => {
-          if (node.nodeType === 3 && node.textContent.trim() && !/^(SCRIPT|STYLE)$/i.test(element.tagName)) {
-            node.textContent = formatHollowUnits(node.textContent);
-          }
-        });
-      });
     }
+    formatMeasurementsInElement(document.body, code, currentPage);
+    formatMeasurementMetadata(code, currentPage);
   };
 
   document.querySelectorAll("[data-language]").forEach((select) => select.addEventListener("change", () => {
@@ -1588,6 +1750,7 @@
     appendText("p", `${languageCopy.limits}: ${copy.limits}`, "calculation-note");
     appendText("p", `${languageCopy.alternative}: ${copy.alternative}`, "calculation-note");
     appendText("p", languageCopy.confidence, "calculation-note");
+    formatMeasurementsInElement(root, code, document.body.dataset.page);
     root.hidden = false;
   };
   let lastCalculationReport = null;
@@ -1597,20 +1760,6 @@
   document.querySelectorAll("[data-language]").forEach((select) => select.addEventListener("change", () => {
     setTimeout(renderLastCalculationReport, 0);
   }));
-  function formatHollowUnits(text) {
-    return text
-    .replace(/3\/8\s*(?:"|inches?|tum|pouces?|Zoll)(?!\s*\()/gi, '3/8" (9 mm)')
-    .replace(/1\/2\s*(?:"|inches?|tum|pouces?|Zoll)(?!\s*\()/gi, '1/2" (13 mm)')
-    .replace(/5\/8\s*(?:"|inches?|tum|pouces?|Zoll)(?!\s*\()/gi, '5/8" (16 mm)')
-    .replace(/3\/4\s*(?:"|inches?|tum|pouces?|Zoll)(?!\s*\()/gi, '3/4" (19 mm)')
-    .replace(/7\/8\s*(?:"|inches?|tum|pouces?|Zoll)(?!\s*\()/gi, '7/8" (22 mm)')
-    .replace(/3\/8(?!["\s]*(?:\(|inch|tum|pouce|Zoll))/gi, '3/8" (9 mm)')
-    .replace(/1\/2(?!["\s]*(?:\(|inch|tum|pouce|Zoll))/gi, '1/2" (13 mm)')
-    .replace(/5\/8(?!["\s]*(?:\(|inch|tum|pouce|Zoll))/gi, '5/8" (16 mm)')
-    .replace(/3\/4(?!["\s]*(?:\(|inch|tum|pouce|Zoll))/gi, '3/4" (19 mm)')
-    .replace(/7\/8(?!["\s]*(?:\(|inch|tum|pouce|Zoll))/gi, '7/8" (22 mm)');
-  }
-
   if (document.body.dataset.page === "flex" && $("flex-form")) {
     const flexLengthParam = new URLSearchParams(window.location.search).get("length");
     if (flexLengthParam && $("flex-length-cm")) {
@@ -1625,7 +1774,7 @@
       let weight = enteredWeight;
       if ($("flex-unit").value === "kg") weight *= 2.20462;
       const baseFlex = weight / 2;
-      const height = Number($("flex-height-cm").value) / 2.54;
+      const height = Number($("flex-height-cm").value) / hockeyConversions.centimetersPerInch;
       const finalLengthCm = Number($("flex-length-cm").value);
       const style = $("flex-style").value;
       const age = $("flex-age").value;
@@ -1636,7 +1785,7 @@
       const heightAdjustment = height < 62 ? -5 : height > 74 ? 5 : 0;
       let lengthAdjustment = 0;
       if (finalLengthCm >= 90 && finalLengthCm <= 230) {
-        const lengthDifferenceInches = (152 - finalLengthCm) / 2.54;
+        const lengthDifferenceInches = (152 - finalLengthCm) / hockeyConversions.centimetersPerInch;
         lengthAdjustment = Math.round(lengthDifferenceInches * 3);
       }
       const adjustedFlex = baseFlex + styleAdjustment + ageAdjustment + skillAdjustment + heightAdjustment + lengthAdjustment;
@@ -1709,7 +1858,7 @@
   if (document.body.dataset.page === "length" && $("length-form")) {
     $("length-form").addEventListener("submit", (event) => {
       event.preventDefault();
-      const height = Number($("height-cm").value) / 2.54;
+      const height = Number($("height-cm").value) / hockeyConversions.centimetersPerInch;
       const category = $("length-age").value;
       const position = $("length-position").value;
       const skates = $("length-skates").value;
@@ -1718,9 +1867,9 @@
       const positionAdjustment = position === "defense" ? 2 : position === "goalie" ? -1 : 0;
       const lengthBeforeRounding = height - ageOffset + footwearAdjustment + positionAdjustment;
       const recommended = Math.max(30, Math.round(lengthBeforeRounding));
-      const recommendedCm = Math.round(recommended * 2.54);
-      const rangeMinCm = Math.round((recommended - 2) * 2.54);
-      const rangeMaxCm = Math.round((recommended + 2) * 2.54);
+      const recommendedCm = Math.round(recommended * hockeyConversions.centimetersPerInch);
+      const rangeMinCm = Math.round((recommended - 2) * hockeyConversions.centimetersPerInch);
+      const rangeMaxCm = Math.round((recommended + 2) * hockeyConversions.centimetersPerInch);
       const lengthReport = {
         inputs: [
           { key: "height", getValue: () => `${$("height-cm").value} cm (${calculationNumber(height)} in)` },
@@ -1745,7 +1894,7 @@
       $("length-number").parentElement.lastChild.textContent = " cm";
       $("length-range").textContent = `${rangeMinCm}–${rangeMaxCm} cm`;
       if ($("length-flex-link")) {
-        $("length-flex-link").href = `../flex-calculator/?length=${Math.round(recommended * 2.54)}&age=${encodeURIComponent(category)}`;
+        $("length-flex-link").href = `../flex-calculator/?length=${Math.round(recommended * hockeyConversions.centimetersPerInch)}&age=${encodeURIComponent(category)}`;
       }
       if ($("length-flex-note")) {
         $("length-flex-note").textContent = resultMessage({
@@ -1787,7 +1936,7 @@
       const hollow = Math.min(0.875, Math.max(0.375, hollowBeforeClamp));
       const bandMinimum = Math.max(0.375, hollow - 0.125);
       const bandMaximum = Math.min(0.875, hollow + 0.125);
-      const labels = { 0.375: '3/8" (9 mm)', 0.5: '1/2" (13 mm)', 0.625: '5/8" (16 mm)', 0.75: '3/4" (19 mm)', 0.875: '7/8" (22 mm)' };
+      const labels = { 0.375: '3/8"', 0.5: '1/2"', 0.625: '5/8"', 0.75: '3/4"', 0.875: '7/8"' };
       const sharpeningReport = {
         inputs: [
           { key: "weight", getValue: () => `${enteredWeight} ${weightUnit} (${calculationNumber(weight)} lb)` },
@@ -1801,15 +1950,15 @@
           { key: "skill", value: (code) => signedValue(skillAdjustment, "inch", code) },
           { key: "ice", value: (code) => signedValue(iceAdjustment, "inch", code) },
           { key: "preference", value: (code) => signedValue(preferenceAdjustment, "inch", code) },
-          { key: "subtotal", value: (code) => `${calculationNumber(0.625, code)} ${signedTerm(weightAdjustment, "inch", code)} ${signedTerm(skillAdjustment, "inch", code)} ${signedTerm(iceAdjustment, "inch", code)} ${signedTerm(preferenceAdjustment, "inch", code)} = ${calculationNumber(hollowBeforeClamp, code)} ${calculationUnit("inch", hollowBeforeClamp, code)}` },
+          { key: "subtotal", value: (code) => `${calculationNumber(0.625, code)} ${calculationUnit("inch", 0.625, code)} ${signedTerm(weightAdjustment, "inch", code)} ${signedTerm(skillAdjustment, "inch", code)} ${signedTerm(iceAdjustment, "inch", code)} ${signedTerm(preferenceAdjustment, "inch", code)} = ${calculationNumber(hollowBeforeClamp, code)} ${calculationUnit("inch", hollowBeforeClamp, code)}` },
           { key: "final", value: (code) => `min(0.875, max(0.375, ${calculationNumber(hollowBeforeClamp, code)})) = ${calculationNumber(hollow, code)} ${calculationUnit("inch", hollow, code)}` },
           { key: "band", value: () => `${labels[bandMinimum]}–${labels[bandMaximum]}` }
         ]
       };
       lastCalculationReport = { kind: "sharpening", report: sharpeningReport };
       renderCalculationReport("sharpening", sharpeningReport);
-      $("hollow-number").textContent = formatHollowUnits(labels[hollow]);
-      $("hollow-message").textContent = formatHollowUnits(resultMessage({
+      $("hollow-number").textContent = labels[hollow];
+      $("hollow-message").textContent = resultMessage({
         en: hollow <= 0.5 ? "This deeper hollow gives more bite for stops and quick turns, but it can feel slower on straight-line glide." : hollow >= 0.75 ? "This shallow hollow prioritizes glide and lower drag, but it asks for confident edge control." : "This balanced hollow is a sensible standard starting point for grip and glide.",
         sv: hollow <= 0.5 ? "Den här djupare skålradien ger bättre grepp i stopp och snabba svängar, men kan kännas långsammare i rak glidning." : hollow >= 0.75 ? "Den här grundare skålradien prioriterar glid och mindre motstånd, men kräver säker kantkontroll." : "Den här balanserade skålradien är en bra standardstart för grepp och glid.",
         fr: hollow <= 0.5 ? "Ce rayon plus creux offre davantage d’accroche dans les arrêts et les virages rapides, mais peut ralentir la glisse en ligne droite." : hollow >= 0.75 ? "Ce rayon peu creux privilégie la glisse et réduit la résistance, mais demande un bon contrôle des carres." : "Ce rayon équilibré constitue un bon point de départ standard entre accroche et glisse.",
@@ -1817,8 +1966,11 @@
         no: hollow <= 0.5 ? "Denne dypere slipeprofilen gir mer bitt i stopp og raske svinger, men kan føles tregere ved rett glid." : hollow >= 0.75 ? "Denne grunnere slipeprofilen prioriterer glid og mindre motstand, men krever god kantkontroll." : "Denne balanserte slipeprofilen er et fornuftig standardutgangspunkt for grep og glid.",
         da: hollow <= 0.5 ? "Denne dybere sliberadius giver mere bid ved stop og hurtige sving, men kan føles langsommere ved ligeudglid." : hollow >= 0.75 ? "Denne fladere sliberadius prioriterer glid og mindre modstand, men kræver sikker kantkontrol." : "Denne balancerede sliberadius er et godt standardudgangspunkt for greb og glid.",
         fi: hollow <= 0.5 ? "Tämä syvempi teroitusura antaa enemmän pitoa pysähdyksissä ja nopeissa käännöksissä, mutta voi hidastaa suoraa luistoa." : hollow >= 0.75 ? "Tämä matala teroitusura painottaa luistoa ja pientä vastusta, mutta vaatii varmaa terien hallintaa." : "Tämä tasapainoinen teroitusura on hyvä lähtökohta pidon ja luiston välillä."
-      }));
+      });
+      formatMeasurementsInElement($("hollow-number"), currentLanguage(), "sharpening");
+      formatMeasurementsInElement($("hollow-message"), currentLanguage(), "sharpening");
       $("hollow-range").textContent = `${labels[bandMinimum]}–${labels[bandMaximum]}`;
+      formatMeasurementsInElement($("hollow-range"), currentLanguage(), "sharpening");
     });
   }
 })();
