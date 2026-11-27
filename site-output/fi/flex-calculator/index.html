@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fi" data-localized-routing="true">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>J&#228;&#228;kiekkomailan flexlaskuri | Mink&#228; flexin valitsen?</title>
+  <meta name="description" content="Arvioi mailan flexin l&#228;ht&#246;kohta painon, pituuden, i&#228;n ja pelityylin perusteella. Vertaa l&#228;hell&#228; olevia vaihtoehtoja ennen mailan valintaa.">
+  <link rel="canonical" href="https://hockeytools.com/fi/flex-calculator/">
+  <link rel="stylesheet" href="../assets/styles.css">
+  
+  <link rel="alternate" hreflang="en" href="https://hockeytools.com/flex-calculator/">
+  <link rel="alternate" hreflang="sv" href="https://hockeytools.com/sv/flex-calculator/">
+  <link rel="alternate" hreflang="no" href="https://hockeytools.com/no/flex-calculator/">
+  <link rel="alternate" hreflang="da" href="https://hockeytools.com/da/flex-calculator/">
+  <link rel="alternate" hreflang="fi" href="https://hockeytools.com/fi/flex-calculator/">
+  <link rel="alternate" hreflang="de" href="https://hockeytools.com/de/flex-calculator/">
+  <link rel="alternate" hreflang="fr" href="https://hockeytools.com/fr/flex-calculator/">
+  <link rel="alternate" hreflang="x-default" href="https://hockeytools.com/flex-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hockey Tools">
+  <meta property="og:title" content="J&#228;&#228;kiekkomailan flexlaskuri | Mink&#228; flexin valitsen?">
+  <meta property="og:description" content="Arvioi mailan flexin l&#228;ht&#246;kohta painon, pituuden, i&#228;n ja pelityylin perusteella. Vertaa l&#228;hell&#228; olevia vaihtoehtoja ennen mailan valintaa.">
+  <meta property="og:url" content="https://hockeytools.com/fi/flex-calculator/">
+  <meta property="og:locale" content="fi_FI">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="J&#228;&#228;kiekkomailan flexlaskuri | Mink&#228; flexin valitsen?">
+  <meta name="twitter:description" content="Arvioi mailan flexin l&#228;ht&#246;kohta painon, pituuden, i&#228;n ja pelityylin perusteella. Vertaa l&#228;hell&#228; olevia vaihtoehtoja ennen mailan valintaa.">
+<script type="application/ld+json">{"url":"https://hockeytools.com/fi/flex-calculator/","name":"Jääkiekkomailan flexlaskuri | Minkä flexin valitsen?","description":"Arvioi mailan flexin lähtökohta painon, pituuden, iän ja pelityylin perusteella. Vertaa lähellä olevia vaihtoehtoja ennen mailan valintaa.","inLanguage":"fi","@type":"WebPage","@context":"https://schema.org"}</script>
+</head>
+<body data-localized-seo="true" data-page="flex">
+  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">HT</span> Hockey Tools</a><nav aria-label="Main navigation"><a class="active" href="./">Stick Flex</a><a href="../stick-length-calculator/">Stick Length</a><a href="../skate-sharpening-guide/">Skate Sharpening</a><a href="../skate-profiling/">Skate Profiling</a></nav><label class="language-picker"><span>Language</span><select data-language aria-label="Language"><option data-language-option value="en">English</option><option data-language-option value="sv">Svenska</option><option data-language-option value="no">Norsk</option><option data-language-option value="da">Dansk</option><option data-language-option value="fi">Suomi</option><option data-language-option value="de">Deutsch</option><option data-language-option value="fr">Français</option></select></label></header>
+  <main>
+    <section class="hero tool-hero"><div><p class="eyebrow">Free hockey equipment calculator</p><h1>Hockey Stick Flex Calculator</h1><p class="hero-copy">Wondering what flex hockey stick you should use? Enter your details to get a recommended flex, practical range and an explanation you can use when shopping.</p></div><div class="hero-number">01</div></section>
+    <section class="section intro-copy"><p class="eyebrow">Find your starting point</p><h2>What flex hockey stick should I use?</h2><p>Stick flex describes how much a shaft bends under load. The right flex helps you load shots without sacrificing accuracy, puck control or comfort. This hockey stick flex calculator combines the traditional weight-based rule with height, age group, skill level and playing style.</p><p>Results are a starting recommendation, not a strict rule. Try a nearby flex when possible, especially if you cut the stick shorter or are between age categories.</p></section>
+    <section class="calculator-layout section" id="calculator">
+      <form class="calculator-card" id="flex-form">
+        <p class="eyebrow">Personalized recommendation</p>
+        <h2>Calculate your stick flex</h2>
+        <div class="field"><label for="flex-weight">Player weight</label><div class="input-row"><input id="flex-weight" type="number" min="15" max="250" value="75" required><select id="flex-unit" aria-label="Weight unit"><option value="kg" selected>kg</option><option value="lb">lb</option></select></div></div>
+        <div class="field"><label for="flex-height">Height</label><div class="input-row"><input id="flex-height-cm" type="number" min="90" max="230" value="178" required aria-label="Height in centimetres"><span class="height-unit">cm</span></div></div>
+        <div class="field"><label for="flex-length-cm">Final stick length (optional)</label><div class="input-row"><input id="flex-length-cm" type="number" min="90" max="230" placeholder="e.g. 152" aria-label="Final stick length in centimetres"><span class="height-unit">cm</span></div><span class="field-help">Add the expected length after cutting to account for the change in effective stiffness.</span></div>
+        <div class="field"><label for="flex-age">Age group</label><select id="flex-age"><option value="youth">Youth (under 12)</option><option value="junior">Junior (12–17)</option><option value="senior" selected>Senior (18+)</option></select></div>
+        <div class="field"><label for="flex-skill">Skill level</label><select id="flex-skill"><option value="beginner">Beginner – learning the basics</option><option value="recreational" selected>Recreational – mostly casual play</option><option value="competitive">Competitive – organized league play</option><option value="elite">Elite – high-performance competition</option></select></div>
+        <div class="field"><label for="flex-style">Playing style</label><select id="flex-style"><option value="quick" selected>Quick release and snapshots</option><option value="power">Power shooter</option><option value="control">Puck control and passing</option><option value="balanced">Balanced all-around</option></select></div>
+        <button class="button" type="submit">Calculate recommended flex <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="result-card" id="flex-result" aria-live="polite"><div class="calculation-breakdown" id="flex-calculation-breakdown" hidden></div><span class="result-label">Your recommendation</span><strong><span id="flex-number">75</span> flex</strong><p><b>Flex range:</b> <span id="flex-range">70–80</span></p><p id="flex-message">Enter your details to see your personalized explanation.</p><p id="flex-length-message"></p><div class="result-note">Test the recommended flex and one step above or below. Cutting a stick shorter makes it feel stiffer.</div></div>
+    </section>
+    <section class="section advice-section">
+      <p class="eyebrow">What to do next</p>
+      <h2>How to interpret the recommendation</h2>
+      <p>Treat this number as a starting point, not a rule. Stick flex labels and feel can vary between models, and the calculator cannot assess your shooting technique or comfort.</p>
+      <ul class="check-list">
+        <li>Check the flex and length information for the exact stick model you are considering.</li>
+        <li>If possible, compare the recommendation with one nearby softer and one stiffer option, and choose the one you can load comfortably.</li>
+        <li>Decide on your final stick length before cutting. Shortening a shaft makes it feel stiffer; ask a shop if you are unsure.</li>
+      </ul>
+    </section>
+    <section class="section table-section"><p class="eyebrow">Quick reference</p><h2>Common hockey stick flex recommendations</h2><p>Use these broad ranges as a youth hockey stick flex chart and senior hockey stick flex chart. Player strength and final stick height can move the best choice.</p><div class="table-wrap"><table><thead><tr><th>Player group</th><th>Typical weight</th><th>Common flex</th><th>Best starting point</th></tr></thead><tbody><tr><td>Youth</td><td>40–90 lb</td><td>20–40</td><td>Easy to load</td></tr><tr><td>Junior</td><td>80–130 lb</td><td>40–55</td><td>Balanced control</td></tr><tr><td>Senior recreational</td><td>130–190 lb</td><td>55–85</td><td>Comfort and release</td></tr><tr><td>Senior competitive</td><td>170–230 lb</td><td>75–100</td><td>Load and stability</td></tr><tr><td>Senior / elite</td><td>200+ lb</td><td>90–110+</td><td>Strength and power</td></tr></tbody></table></div></section>
+    <section class="content-grid section"><article><p class="eyebrow">Understand your result</p><h2>How to choose the best hockey stick flex</h2><p>A lower flex is easier to bend and can help younger, lighter or quick-release players load the shaft. A higher flex can feel more stable and powerful when a strong player can consistently bend it.</p><h2>Three flex adjustments that matter</h2><ul class="check-list"><li><b>Stick height:</b> cutting the shaft shorter increases the effective stiffness.</li><li><b>Skill level:</b> beginners often benefit from a forgiving flex, while experienced shooters may prefer more stability.</li><li><b>Playing style:</b> quick-release players usually test softer; power shooters may test stiffer.</li></ul><a class="button button-secondary" href="../stick-length-calculator/">Check your stick length →</a> <a class="button button-secondary" href="../skate-sharpening-guide/">Read the skate sharpening guide →</a></article><aside class="affiliate-box"><p class="eyebrow">Shop smarter</p><h3>Compare sticks by flex</h3><p>Use your result as a filter when comparing youth, junior and senior sticks from hockey retailers.</p><a href="https://www.hockeymonkey.com/hockey-sticks.html" rel="sponsored noopener" target="_blank">Browse hockey sticks →</a><small>Affiliate link: we may earn a commission at no extra cost to you.</small></aside></section>
+    <section class="section elite-guide" data-swedish-content lang="sv" hidden>
+      <p class="eyebrow">Elit, professionella spelare och materialansvariga</p>
+      <h2>Rekommendationer för elit- och professionella spelare</h2>
+      <p><strong>Nybörjarråd:</strong> Börja med klubblängd och vikt som utgångspunkt. Halva kroppsvikten i pund är ett startvärde, men ska inte behandlas som en färdig anpassad flex. Testa ett lägre och ett högre värde i 20–30 skott innan du väljer.</p>
+      <p><strong>Avancerade råd:</strong> Fokusera på hur klubban laddas, inte bara på vilken vikt som står på skaftet. Spelstil, skottteknik, styrka, slutlig klubblängd och tidpunkten för skottutlösningen är viktiga. En kortare klubba ökar den upplevda styvheten, även om den tryckta flexen är densamma.</p>
+      <p><strong>Elitnivå-rekommendationer:</strong> En <strong>hockeyklubba elitspelare</strong> kan anpassas i flexsteg, längd, kick point, bladmodell och grepp. Målet är en reproducerbar laddning vid full fart, inte att klubban böjs så mycket som möjligt. Testa i matchtempo och med samma skottmönster som spelaren använder i matcher.</p>
+      <h2>Hur spelstil och position påverkar valet</h2>
+      <ul class="check-list">
+        <li><strong>Teknisk playmaker:</strong> Ofta snabb utlösning och många handledsskott. Kan gynnas av något mjukare <strong>bästa flex hockey</strong> om tekniken bygger på att lägga hastighet i pucken.</li>
+        <li><strong>Sniper/målskytt:</strong> Rak skotteknik och hårda slagskott kan kräva en stabil laddning. För <strong>hockeyklubba för hårda slagskott</strong> är klubbens kick point, bladets vikt och spelarens styrka viktigare än ett generellt proffsvärde.</li>
+        <li><strong>Tvåvägscenter:</strong> Behöver kontroll i väggspel och snabb utlösning. Flexen väljs ofta som en kompromiss mellan puckhantering, handledsskott och press i egen zon.</li>
+        <li><strong>Offensiv back:</strong> Får ofta mer tid vid blå linjen och behöver stabilitet i slagskott. En något längre eller styvare klubba kan ge bättre kontroll vid belastning.</li>
+        <li><strong>Defensiv back:</strong> Prioriterar rensning av puck ur zon, första passning och precision i handledsskott. Korta, snabba rörelser kan göra en för styv <strong>hockeyklubba senior</strong> svår att ladda fullständigt.</li>
+      </ul>
+      <h2>Flexval för elitspelare</h2>
+      <p>Två spelare med samma vikt kan välja helt olika flex beroende på skottteknik, styrka, klubblängd, puckhantering och position. En snabb handledsskottsspelare kan behöva en mjukare laddning, medan en kraftfull avslutare med tung belastning kan behålla mer energi i en styvare skaft. En <strong>vilken flex använder proffsen</strong>-fråga har därför inget entydigt svar: professionella val spänner över flera kategorier och testas individuellt.</p>
+      <h2>Individuell anpassning och professionella exempel</h2>
+      <p>På NHL-, SHL- och Hockeyallsvenskan-nivå kombinerar materialare, tränare och spelare tryckta flexvärden med faktisk känsla. Vanligt arbetssätt är att testa två närliggande flexvärden, registrera skottträffar, puckhastighet och träffbild och därefter kontrollera passningen i hårda väggdueller. En anpassad klubba kan innefatta annan längd, annorlunda grepp, specifik bladmodell eller kick point – alltså en <strong>anpassad hockeyklubba</strong> för uppgiften och inte ett märkesbaserat ”proffstall”.</p>
+      <p>Exempel från professionell hockey visar principer snarare än offentligt fastställda personliga uppsättningar: en teknisk forward kan föredra en lättare laddning för snabba skott, en tung avslutare kan föredra stabilitet i kraftfulla skott, och en back kan anpassa klubblängden för kontroll vid blå linjen. NHL, SHL och Hockeyallsvenskan använder både märken som CCM och Bauer; det viktiga är spelstilen, inte att en viss flex är universell.</p>
+      <h2>Vanliga misstag hos elitspelare</h2>
+      <ul class="check-list">
+        <li>Att välja högre flex enbart för att “proffsen gör det”, trots att tekniken inte laddar klubban.</li>
+        <li>Att kapa klubban utan att räkna med att den blir upplevas styvare.</li>
+        <li>Att byta kick point, längd eller bladmodell samtidigt och därmed inte kunna jämföra förändringen.</li>
+        <li>Att basera valet på ett styrkeprov i gymmet i stället för skott och puckkontroll på is.</li>
+        <li>Att ignorera hur samma spelare kan behöva olika setup beroende på is, period och matchroll.</li>
+      </ul>
+      <h2>Kroppsvikt och individuella begränsningar</h2>
+      <p>Kroppsvikt påverkar rekommendationen men styr inte valet ensamt. Vikten fördelas olika, styrka och utgångsställning varierar, och en lättare spelare kan vara tekniskt starkare i laddningen än en tyngre spelare. En <strong>hockeyklubba avancerad spelare</strong> utgår därför alltid från prov på is, inte enbart vikt eller kategori. Dokumentera vikt, längd, slutlig klubblängd, skottmönster och smärtfria belastningar. En standard eller flexguide ger en referens; resultatet ska alltid testas på is.</p>
+      <p><strong>Hockeyutrustning elitnivå</strong> handlar därför om en strukturerad anpassningsprocess: provspel, återkoppling, anteckningar, en ändring åt gången och återbesök hos materialaren. Detta gäller även ungdomsspelare, junior elitspelare och hockeygymnasieelever som växer eller ändrar styrka under säsongen.</p>
+    </section>
+    <section class="section editorial-note"><h2>Fact-check and sources</h2><p>Information and sources last reviewed 15 October 2026. No independent review by a hockey equipment fitter or skate sharpener has been completed.</p><ul><li><a href="https://www.usahockey.com/news_article/show/971864" rel="noopener" target="_blank">USA Hockey: Tips for buying equipment as an adult</a></li></ul></section>
+    <section class="faq section"><p class="eyebrow">Common questions</p><h2>Hockey stick flex FAQ</h2><details><summary>What flex hockey stick should I use?</summary><p>Start near half your body weight in pounds, then adjust for age, height, skill and style. Test a small range rather than treating one number as exact.</p></details><details><summary>What is the best hockey stick flex?</summary><p>The best flex is the one you can load comfortably while maintaining accuracy and puck control. Softer is not always better, and stiffer is not automatically more powerful.</p></details><details><summary>What flex should a youth hockey player use?</summary><p>Youth players generally need a softer flex they can bend without forcing the shot. Weight, height and confidence should guide the final choice.</p></details><details><summary>Does cutting a stick change flex?</summary><p>Yes. Cutting the shaft shorter makes it feel stiffer, so choose and test the final stick length before making a large cut.</p></details><details><summary>How do I use a senior hockey stick flex chart?</summary><p>Match your approximate weight to a range, then adjust for shooting style, strength and stick length. Our calculator combines those factors for a more personalized starting point.</p></details></section>
+  </main>
+  <footer class="site-footer"><div><strong>Hockey Tools</strong><p>Independent educational tools for hockey players worldwide.</p></div><div><a href="../stick-length-calculator/">Stick Length</a><a href="../skate-sharpening-guide/">Skate Sharpening</a></div></footer>
+  <script src="../assets/app.js?v=12" defer></script>
+</body>
+</html>
+
