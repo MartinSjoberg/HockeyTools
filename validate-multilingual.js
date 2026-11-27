@@ -4,7 +4,7 @@ const path = require("path");
 const root = __dirname;
 const supportedLanguages = ["en", "sv", "no", "da", "fi", "de", "fr"];
 const placeholderPattern = /\b(todo|tbd|lorem ipsum|translation needed|not translated)\b|{{[^}]+}}|\[[^\]]*(placeholder|översättning)[^\]]*\]/i;
-const excludedDirectories = new Set(["node_modules", "site-output", ".git"]);
+const excludedDirectories = new Set(["node_modules", "site-output", ".git", ".wrangler"]);
 
 const sourcePages = [];
 const inspectDirectory = (directory) => {

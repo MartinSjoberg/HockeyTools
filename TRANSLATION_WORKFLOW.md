@@ -21,7 +21,7 @@ Every visible source page must include all seven language options, with English 
 4. Keep hockey terminology coherent and verify manufacturer or profile names against official sources.
 5. Keep beginner, advanced and professional guidance in one article where relevant.
 6. Update FAQ questions and answers in every supported language at the same time.
-7. Update title, description, Open Graph locale and hreflang metadata through `assets/localized-seo.json` and `build-site.ps1`.
+7. Update title, description, Open Graph locale and hreflang metadata through `assets/localized-seo.json`; `build-site.js` generates the localized output.
 
 ## Internal linking
 
@@ -52,9 +52,21 @@ Run:
 
 ```powershell
 npm test
-$env:SITE_ORIGIN='https://www.example.com'; npm run build
+$env:SITE_ORIGIN='https://www.example.com'
+npm run build
 npm test
 ```
+
+## Cloudflare Workers Static Assets
+
+The Wrangler configuration targets Workers Static Assets, not Cloudflare Pages:
+
+- Build command: `npm run build`
+- Static assets directory: `site-output` (configured in `wrangler.jsonc`)
+- Set `SITE_ORIGIN` to the canonical HTTPS origin before building.
+- Use Node.js 22; `.nvmrc` selects it and `package.json` requires Node.js 20 or newer.
+
+The build is platform-independent Node.js and does not require PowerShell. Install dependencies with `npm ci` in CI before running the build.
 
 Before publication, manually verify:
 

@@ -4,9 +4,12 @@
   "main": "validate-translations.js",
   "scripts": {
     "prebuild": "npm run validate:translations",
-    "build": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"if ([string]::IsNullOrWhiteSpace($env:SITE_ORIGIN)) { throw 'Set SITE_ORIGIN to the HTTPS website origin.' }; & .\\build-site.ps1 -SiteOrigin $env:SITE_ORIGIN\"",
+    "build": "node build-site.js",
     "validate:translations": "node validate-multilingual.js",
     "test": "npm run validate:translations"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "keywords": [],
   "author": "",
