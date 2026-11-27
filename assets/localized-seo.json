@@ -1,0 +1,172 @@
+{
+  "languages": {
+    "en": {
+      "htmlLang": "en",
+      "ogLocale": "en_US",
+      "home": {"title": "Hockey Tools | Stick & Skate Guides", "description": "Practical hockey stick, skate sharpening and equipment guides for players, parents and coaches."},
+      "flex": {"description": "Estimate a starting hockey stick flex from player weight, height, age and playing style. Compare nearby options before choosing a stick."},
+      "length": {"description": "Estimate a hockey stick length from player height, skates, age and position, then check the fit in a natural skating stance."},
+      "sharpening": {"description": "Understand hockey skate hollow radius, compare grip and glide, and use a calculator to find a starting point."},
+      "profiling": {"description": "A sourced guide to hockey skate profiling: Quad Zero, Quad, Zuperior, Ellipse and single-radius geometry, history, biomechanics, comparisons and FAQ."},
+      "titles": {
+        "index": "Hockey Tools | Stick & Skate Guides",
+        "flex-calculator": "Hockey Stick Flex Calculator | What Flex Should I Use?",
+        "stick-length-calculator": "Hockey Stick Length Calculator | Find the Correct Stick Length",
+        "skate-sharpening-guide": "Hockey Skate Sharpening Guide | Hollow & Calculator",
+        "skate-profiling": "Hockey Skate Profiling Guide | Quad Zero, Zuperior & History",
+        "5-8-vs-1-2-skate-sharpening": "5/8 vs 1/2 Skate Sharpening | Compare Hollows",
+        "bauer-stick-flex-chart": "Bauer Stick Flex Chart | Youth, Junior & Senior",
+        "best-skate-hollow-for-beginners": "Best Skate Hollow for Beginners | Hockey Guide",
+        "best-stick-flex-by-weight": "Best Hockey Stick Flex by Weight | Flex Chart",
+        "ccm-stick-flex-chart": "CCM Stick Flex Chart | Find Your Starting Flex",
+        "hockey-stick-cutting-guide": "Hockey Stick Cutting Guide | Length & Flex",
+        "how-long-should-my-hockey-stick-be": "How Long Should My Hockey Stick Be? | Sizing Guide",
+        "youth-hockey-stick-sizing-guide": "Youth Hockey Stick Sizing Guide | Length & Flex"
+      }
+    },
+    "sv": {
+      "htmlLang": "sv",
+      "ogLocale": "sv_SE",
+      "home": {"title": "Hockeyverktyg | Guider för klubbor och skridskor", "description": "Praktiska guider om hockeyklubbor, skridskoslipning och utrustning för spelare, föräldrar och tränare."},
+      "flex": {"description": "Beräkna en startpunkt för hockeyklubbans flex utifrån vikt, längd, ålder och spelstil. Jämför närliggande alternativ innan du väljer klubba."},
+      "length": {"description": "Beräkna en ungefärlig klubblängd utifrån längd, skridskor, ålder och position. Kontrollera sedan passformen i din vanliga skridskohållning."},
+      "sharpening": {"description": "Lär dig skillnaden mellan skålradie, grepp och glid och använd kalkylatorn för att hitta en startpunkt för skridskoslipning."},
+      "profiling": {"description": "Källbelagd guide till skridskoprofilering: Quad Zero, Quad, Zuperior och Ellipse. Läs om historia, geometri, biomekanik, jämförelser och vanliga frågor."},
+      "titles": {
+        "index": "Hockeyverktyg | Guider för klubbor och skridskor",
+        "flex-calculator": "Kalkylator för klubbflex | Vilken flex ska jag välja?",
+        "stick-length-calculator": "Kalkylator för klubblängd | Hitta rätt längd",
+        "skate-sharpening-guide": "Guide för skridskoslipning | Skålradie och kalkylator",
+        "skate-profiling": "Skridskoprofilering | Quad Zero, Zuperior och historik",
+        "5-8-vs-1-2-skate-sharpening": "5/8 eller 1/2 vid skridskoslipning? Jämför skålradier",
+        "bauer-stick-flex-chart": "Bauer flexguide | Junior-, ungdoms- och seniorklubbor",
+        "best-skate-hollow-for-beginners": "Skålradie för nybörjare | Guide till skridskoslipning",
+        "best-stick-flex-by-weight": "Hockeyklubbans flex efter vikt | Flexguide",
+        "ccm-stick-flex-chart": "CCM flexguide | Hitta en startflex",
+        "hockey-stick-cutting-guide": "Guide: kapa hockeyklubban | Längd och flex",
+        "how-long-should-my-hockey-stick-be": "Hur lång ska hockeyklubban vara? | Storleksguide",
+        "youth-hockey-stick-sizing-guide": "Storleksguide för ungdomsklubbor | Längd och flex"
+      }
+    },
+    "no": {
+      "htmlLang": "no",
+      "ogLocale": "nb_NO",
+      "home": {"title": "Hockeyverktøy | Guider for køller og skøyter", "description": "Praktiske guider om hockeykøller, skøytesliping og utstyr for spillere, foreldre og trenere."},
+      "flex": {"description": "Finn et utgangspunkt for hockeykøllens flex ut fra vekt, høyde, alder og spillestil. Sammenlign nærliggende alternativer før du velger kølle."},
+      "length": {"description": "Beregn en omtrentlig køllelengde ut fra høyde, skøyter, alder og posisjon. Kontroller deretter passformen i vanlig skøytestilling."},
+      "sharpening": {"description": "Lær om slipeprofil, grep og glid, og bruk kalkulatoren til å finne et utgangspunkt for skøytesliping."},
+      "profiling": {"description": "Kildebelagt guide til skøyteprofilering: Quad Zero, Quad, Zuperior og Ellipse. Historie, geometri, biomekanikk, sammenligninger og FAQ."},
+      "titles": {
+        "index": "Hockeyverktøy | Guider for køller og skøyter",
+        "flex-calculator": "Kalkulator for kølleflex | Hvilken flex bør jeg bruke?",
+        "stick-length-calculator": "Kalkulator for køllelengde | Finn riktig lengde",
+        "skate-sharpening-guide": "Guide til skøytesliping | Slipeprofil og kalkulator",
+        "skate-profiling": "Skøyteprofilering | Quad Zero, Zuperior og historie",
+        "5-8-vs-1-2-skate-sharpening": "5/8 eller 1/2 ved skøytesliping? Sammenlign radier",
+        "bauer-stick-flex-chart": "Bauer flexguide | Junior-, ungdoms- og seniorkøller",
+        "best-skate-hollow-for-beginners": "Slipeprofil for nybegynnere | Guide til skøytesliping",
+        "best-stick-flex-by-weight": "Hockeykøllens flex etter vekt | Flexguide",
+        "ccm-stick-flex-chart": "CCM flexguide | Finn et utgangspunkt",
+        "hockey-stick-cutting-guide": "Guide til kapping av hockeykølle | Lengde og flex",
+        "how-long-should-my-hockey-stick-be": "Hvor lang bør hockeykøllen være? | Størrelsesguide",
+        "youth-hockey-stick-sizing-guide": "Størrelsesguide for ungdomskøller | Lengde og flex"
+      }
+    },
+    "da": {
+      "htmlLang": "da",
+      "ogLocale": "da_DK",
+      "home": {"title": "Hockeyværktøjer | Guides til stave og skøjter", "description": "Praktiske guides om hockeystave, skøjteslibning og udstyr til spillere, forældre og trænere."},
+      "flex": {"description": "Find et udgangspunkt for hockeystavens flex ud fra vægt, højde, alder og spillestil. Sammenlign nærliggende muligheder, før du vælger stav."},
+      "length": {"description": "Beregn en omtrentlig stavlængde ud fra højde, skøjter, alder og position. Kontrollér derefter pasformen i din normale skøjtestilling."},
+      "sharpening": {"description": "Lær om sliberadius, greb og glid, og brug beregneren til at finde et udgangspunkt for skøjteslibning."},
+      "profiling": {"description": "Kildebelagt guide til skøjteprofilering: Quad Zero, Quad, Zuperior og Ellipse. Historie, geometri, biomekanik, sammenligninger og FAQ."},
+      "titles": {
+        "index": "Hockeyværktøjer | Guides til stave og skøjter",
+        "flex-calculator": "Beregner til stavflex | Hvilken flex skal jeg bruge?",
+        "stick-length-calculator": "Beregner til stavlængde | Find den rette længde",
+        "skate-sharpening-guide": "Guide til skøjteslibning | Sliberadius og beregner",
+        "skate-profiling": "Skøjteprofilering | Quad Zero, Zuperior og historie",
+        "5-8-vs-1-2-skate-sharpening": "5/8 eller 1/2 ved skøjteslibning? Sammenlign radier",
+        "bauer-stick-flex-chart": "Bauer flexguide | Junior-, ungdoms- og seniorstave",
+        "best-skate-hollow-for-beginners": "Sliberadius for begyndere | Guide til skøjteslibning",
+        "best-stick-flex-by-weight": "Hockeystavens flex efter vægt | Flexguide",
+        "ccm-stick-flex-chart": "CCM flexguide | Find et udgangspunkt",
+        "hockey-stick-cutting-guide": "Guide til afkortning af hockeystave | Længde og flex",
+        "how-long-should-my-hockey-stick-be": "Hvor lang skal min hockeystav være? | Størrelsesguide",
+        "youth-hockey-stick-sizing-guide": "Størrelsesguide til ungdomsstave | Længde og flex"
+      }
+    },
+    "fi": {
+      "htmlLang": "fi",
+      "ogLocale": "fi_FI",
+      "home": {"title": "Jääkiekon työkalut | Opas mailoihin ja luistimiin", "description": "Käytännön oppaita jääkiekkomailoista, luistinten teroituksesta ja varusteista pelaajille, vanhemmille ja valmentajille."},
+      "flex": {"description": "Arvioi mailan flexin lähtökohta painon, pituuden, iän ja pelityylin perusteella. Vertaa lähellä olevia vaihtoehtoja ennen mailan valintaa."},
+      "length": {"description": "Arvioi jääkiekkomailan pituus pelaajan pituuden, luistinten, iän ja pelipaikan perusteella. Tarkista sopivuus normaalissa luisteluasennossa."},
+      "sharpening": {"description": "Tutustu teroitusuraan, pitoon ja luistoon ja löydä laskurilla sopiva lähtökohta luistinten teroitukseen."},
+      "profiling": {"description": "Lähteisiin perustuva opas luistinten profilointiin: Quad Zero, Quad, Zuperior ja Ellipse. Historia, geometria, biomekaniikka, vertailut ja usein kysyttyä."},
+      "titles": {
+        "index": "Jääkiekon työkalut | Opas mailoihin ja luistimiin",
+        "flex-calculator": "Jääkiekkomailan flexlaskuri | Minkä flexin valitsen?",
+        "stick-length-calculator": "Jääkiekkomailan pituuslaskuri | Löydä sopiva pituus",
+        "skate-sharpening-guide": "Luistinten teroitusopas | Teroitusura ja laskuri",
+        "skate-profiling": "Luistinten profilointi | Quad Zero, Zuperior ja historia",
+        "5-8-vs-1-2-skate-sharpening": "Luistinten teroitus 5/8 vai 1/2? Vertaa uria",
+        "bauer-stick-flex-chart": "Bauer-mailan flexopas | Juniori-, nuoriso- ja seniorimailat",
+        "best-skate-hollow-for-beginners": "Teroitusura aloittelijalle | Luistinten teroitusopas",
+        "best-stick-flex-by-weight": "Jääkiekkomailan flex painon mukaan | Flexopas",
+        "ccm-stick-flex-chart": "CCM-mailan flexopas | Sopivan lähtökohdan valinta",
+        "hockey-stick-cutting-guide": "Jääkiekkomailan lyhentäminen | Pituus ja flex",
+        "how-long-should-my-hockey-stick-be": "Kuinka pitkä jääkiekkomailan tulisi olla? | Koko-opas",
+        "youth-hockey-stick-sizing-guide": "Nuorten jääkiekkomailojen koko-opas | Pituus ja flex"
+      }
+    },
+    "de": {
+      "htmlLang": "de",
+      "ogLocale": "de_DE",
+      "home": {"title": "Hockey-Tools | Ratgeber für Schläger und Schlittschuhe", "description": "Praktische Ratgeber zu Hockeyschlägern, Schlittschuhschliff und Ausrüstung für Spieler, Eltern und Trainer."},
+      "flex": {"description": "Finde einen Flex-Ausgangspunkt anhand von Gewicht, Größe, Alter und Spielstil. Vergleiche benachbarte Optionen, bevor du einen Schläger auswählst."},
+      "length": {"description": "Schätze die passende Hockeyschlägerlänge anhand von Größe, Schlittschuhen, Alter und Position ein. Prüfe anschließend die Passform in deiner Laufhaltung."},
+      "sharpening": {"description": "Erfahre mehr über Hohlschliff, Grip und Gleiten und nutze den Rechner als Ausgangspunkt für den Schlittschuhschliff."},
+      "profiling": {"description": "Quellenbasierter Ratgeber zur Schlittschuhprofilierung: Quad Zero, Quad, Zuperior und Ellipse. Geschichte, Geometrie, Biomechanik, Vergleiche und FAQ."},
+      "titles": {
+        "index": "Hockey-Tools | Ratgeber für Schläger und Schlittschuhe",
+        "flex-calculator": "Hockeyschläger-Flex-Rechner | Welchen Flex sollte ich wählen?",
+        "stick-length-calculator": "Hockeyschläger-Längenrechner | Die passende Länge finden",
+        "skate-sharpening-guide": "Ratgeber zum Schlittschuhschliff | Hohlschliff und Rechner",
+        "skate-profiling": "Schlittschuhprofilierung | Quad Zero, Zuperior & Geschichte",
+        "5-8-vs-1-2-skate-sharpening": "Schliff 5/8 oder 1/2? Hohlschliffe vergleichen",
+        "bauer-stick-flex-chart": "Bauer-Flex-Ratgeber | Jugend-, Junior- und Senior-Schläger",
+        "best-skate-hollow-for-beginners": "Hohlschliff für Anfänger | Ratgeber zum Schlittschuhschliff",
+        "best-stick-flex-by-weight": "Hockeyschläger-Flex nach Gewicht | Flex-Ratgeber",
+        "ccm-stick-flex-chart": "CCM-Flex-Ratgeber | Einen Ausgangswert finden",
+        "hockey-stick-cutting-guide": "Hockeyschläger kürzen | Länge und Flex",
+        "how-long-should-my-hockey-stick-be": "Wie lang sollte mein Hockeyschläger sein? | Größenratgeber",
+        "youth-hockey-stick-sizing-guide": "Größenratgeber für Jugend-Hockeyschläger | Länge und Flex"
+      }
+    },
+    "fr": {
+      "htmlLang": "fr",
+      "ogLocale": "fr_FR",
+      "home": {"title": "Outils de hockey | Guides sur les crosses et les patins", "description": "Des guides pratiques sur les crosses de hockey, l’affûtage des patins et l’équipement, pour les joueurs, les parents et les entraîneurs."},
+      "flex": {"description": "Estimez un flex de départ selon le poids, la taille, l’âge et le style de jeu. Comparez les options proches avant de choisir une crosse."},
+      "length": {"description": "Estimez la longueur d’une crosse selon la taille, les patins, l’âge et le poste, puis vérifiez l’ajustement en posture de patinage."},
+      "sharpening": {"description": "Comprenez le creux d’affûtage, l’accroche et la glisse, et utilisez le calculateur pour trouver un point de départ."},
+      "profiling": {"description": "Guide sourcé du profilage des patins : Quad Zero, Quad, Zuperior et Ellipse. Histoire, géométrie, biomécanique, comparaisons et FAQ."},
+      "titles": {
+        "index": "Outils de hockey | Guides sur les crosses et les patins",
+        "flex-calculator": "Calculateur de flex de crosse | Quel flex choisir ?",
+        "stick-length-calculator": "Calculateur de longueur de crosse | Trouver la bonne taille",
+        "skate-sharpening-guide": "Guide d’affûtage des patins | Creux et calculateur",
+        "skate-profiling": "Profilage des patins | Quad Zero, Zuperior et histoire",
+        "5-8-vs-1-2-skate-sharpening": "Affûtage 5/8 ou 1/2 ? Comparer les creux",
+        "bauer-stick-flex-chart": "Guide des flex Bauer | Crosses junior, jeune et senior",
+        "best-skate-hollow-for-beginners": "Creux d’affûtage pour débutants | Guide des patins",
+        "best-stick-flex-by-weight": "Flex de crosse selon le poids | Guide des flex",
+        "ccm-stick-flex-chart": "Guide des flex CCM | Trouver un point de départ",
+        "hockey-stick-cutting-guide": "Couper une crosse de hockey | Longueur et flex",
+        "how-long-should-my-hockey-stick-be": "Quelle longueur pour ma crosse ? | Guide des tailles",
+        "youth-hockey-stick-sizing-guide": "Guide des tailles de crosses jeunes | Longueur et flex"
+      }
+    }
+  }
+}

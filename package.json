@@ -1,0 +1,19 @@
+{
+  "name": "hockeytools",
+  "version": "1.0.0",
+  "main": "validate-translations.js",
+  "scripts": {
+    "prebuild": "npm run validate:translations",
+    "build": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"if ([string]::IsNullOrWhiteSpace($env:SITE_ORIGIN)) { throw 'Set SITE_ORIGIN to the HTTPS website origin.' }; & .\\build-site.ps1 -SiteOrigin $env:SITE_ORIGIN\"",
+    "validate:translations": "node validate-multilingual.js",
+    "test": "npm run validate:translations"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.63.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
