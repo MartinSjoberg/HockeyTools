@@ -171,13 +171,13 @@
   };
 
   const translations = {
-    en: { language: "Language", flex: "Stick Flex", length: "Stick Length", skates: "Skate Sharpening", profiling: "Skate Profiling", recommended: "Your recommendation", home: "Hockey Tools" },
-    sv: { language: "Språk", flex: "Klubbflex", length: "Klubblängd", skates: "Skridskoslipning", profiling: "Skridsko profilering", recommended: "Din rekommendation", home: "Hockeyverktyg" },
-    fr: { language: "Langue", flex: "Flex de crosse", length: "Longueur de crosse", skates: "Affûtage des patins", profiling: "Profilage des patins", recommended: "Votre recommandation", home: "Outils de hockey" },
-    de: { language: "Sprache", flex: "Schläger-Flex", length: "Schlägerlänge", skates: "Schlittschliff", profiling: "Schlittschuhprofilierung", recommended: "Ihre Empfehlung", home: "Hockey-Werkzeuge" },
-    no: { language: "Språk", flex: "Kølleflex", length: "Køllelengde", skates: "Skøytesliping", profiling: "Skøyteprofilering", recommended: "Din anbefaling", home: "Hockeyverktøy" },
-    da: { language: "Sprog", flex: "Stavflex", length: "Stavlængde", skates: "Skøjteslibning", profiling: "Skøjteprofilering", recommended: "Din anbefaling", home: "Hockeyværktøjer" },
-    fi: { language: "Kieli", flex: "Mailan flex", length: "Mailan pituus", skates: "Luistinten teroitus", profiling: "Luistimen profilointi", recommended: "Suosituksesi", home: "Jääkiekko työkalut" }
+    en: { language: "Language", flex: "Stick Flex", length: "Stick Length", skates: "Skate Sharpening", profiling: "Skate Profiling", recommended: "Your recommendation" },
+    sv: { language: "Språk", flex: "Klubbflex", length: "Klubblängd", skates: "Skridskoslipning", profiling: "Skridsko profilering", recommended: "Din rekommendation" },
+    fr: { language: "Langue", flex: "Flex de crosse", length: "Longueur de crosse", skates: "Affûtage des patins", profiling: "Profilage des patins", recommended: "Votre recommandation" },
+    de: { language: "Sprache", flex: "Schläger-Flex", length: "Schlägerlänge", skates: "Schlittschliff", profiling: "Schlittschuhprofilierung", recommended: "Ihre Empfehlung" },
+    no: { language: "Språk", flex: "Kølleflex", length: "Køllelengde", skates: "Skøytesliping", profiling: "Skøyteprofilering", recommended: "Din anbefaling" },
+    da: { language: "Sprog", flex: "Stavflex", length: "Stavlængde", skates: "Skøjteslibning", profiling: "Skøjteprofilering", recommended: "Din anbefaling" },
+    fi: { language: "Kieli", flex: "Mailan flex", length: "Mailan pituus", skates: "Luistinten teroitus", profiling: "Luistimen profilointi", recommended: "Suosituksesi" }
   };
   const sharpeningBandLabels = {
     en: "Suggested test band (±1/8 in; not a confidence interval):",
@@ -1171,11 +1171,6 @@
       element.hidden = code !== "sv";
     });
     const t = translations[code];
-    const brand = document.querySelector(".brand");
-    if (brand) {
-      brand.lastChild.textContent = translateText(" Hockey Tools", code);
-      brand.setAttribute("aria-label", translateText("Hockey Tools home", code));
-    }
     document.querySelectorAll("body *").forEach((element) => {
       element.childNodes.forEach((node) => {
         if (node.nodeType === 3 && node.textContent.trim() && !/^(SCRIPT|STYLE)$/i.test(element.tagName) && !element.closest("select[data-language]") && !element.closest(".brand")) {

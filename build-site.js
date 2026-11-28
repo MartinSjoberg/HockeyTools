@@ -15,6 +15,7 @@ const ignoredDirectories = new Set([
   "site-output"
 ]);
 const staticFiles = ["404.html", "robots.txt", "sitemap.xml"];
+const binaryFiles = ["favicon.ico"];
 const assets = ["assets/app.js", "assets/styles.css"];
 
 function getSiteOrigin() {
@@ -207,6 +208,10 @@ function copyStaticFiles(origin) {
     const destination = path.join(outputDirectory, asset);
     fs.mkdirSync(path.dirname(destination), { recursive: true });
     fs.copyFileSync(path.join(root, asset), destination);
+  }
+
+  for (const file of binaryFiles) {
+    fs.copyFileSync(path.join(root, file), path.join(outputDirectory, file));
   }
 
   for (const file of staticFiles) {
